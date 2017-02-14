@@ -56,9 +56,12 @@ public abstract class TabHostActivity extends TabActivity
     {
       if (i >= j)
         return;
-      View localViewhis.mLayoutflater.inflate(R.layout.index_tab_item, null);
-      Object localObject = (LinearLayout)localView.findViewById(2131231130);
+      View localViewhis.mLayoutflater.inflate(R.layout.index_tab_item, null); //吧那个  布局 加进去
+      //反编译出来的 代码 全部都是错的
+      Object localObject = (LinearLayout)localView.findViewById(R.id.tab_Item_layout);
+      //抽象方法
       setTabItemTextView((TextView)localView.findViewById(2131231132), (ImageView)localView.findViewById(2131231131), (LinearLayout)localObject, i);
+      //抽象Id,tabitem
       localObject = getTabItemId(i);
       localObject = this.mTabHost.newTabSpec((String)localObject);
       ((TabHost.TabSpec)localObject).setIndicator(localView);
@@ -103,13 +106,16 @@ public abstract class TabHostActivity extends TabActivity
     requestWindowFeature(1);
     setContentView(R.layout.index_tab_host);
     this.tvPhoto = ((ImageView)findViewById(2131231129));
-    this.tvPhoto.setOnClickListener(new View.OnClickListener()
+
+    this.tvPhoto.setOnClickListener(new View.OnClickListener()//照相
     {
       public void onClick(View paramAnonymousView)
       {
         TabHostActivity.this.application = ((AndroidApplication)TabHostActivity.this.getApplication());
-        paramAnonymousView = TabHostActivity.this.application.getUser();
-        if ((paramAnonymousView == null) || (paramAnonymousView.getLoginType() == 6))
+
+        paramAnonymousView = TabHostActivity.this.application.getUser();  //实体
+        //我严重怀疑这个  反编译的代码有错误
+        if ((paramAnonymousView == null) || (paramAnonymousView.getLoginType() == 6)) //登录的状态
         {
           paramAnonymousView = new Intent(TabHostActivity.this, LoginActivity.class);
           TabHostActivity.this.startActivity(paramAnonymousView);
@@ -125,6 +131,7 @@ public abstract class TabHostActivity extends TabActivity
     this.mTabWidget = getTabWidget();
     prepare();
     initTabSpec();
+
     this.mTabHost.getCurrentTabView().setOnClickListener(new View.OnClickListener()
     {
       public void onClick(View paramAnonymousView)
@@ -138,6 +145,7 @@ public abstract class TabHostActivity extends TabActivity
         TabHostActivity.this.mTabHost.setCurrentTab(0);
       }
     });
+    //umeng 需求
     this.mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener()
     {
       public void onTabChanged(String paramAnonymousString)

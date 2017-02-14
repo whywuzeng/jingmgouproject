@@ -2,7 +2,6 @@ package com.ismartgo.app.activity;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
-import android.app.ActivityManager.RunningAppProcessInfo;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -10,34 +9,24 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
-import android.os.Handler.Callback;
 import android.os.Message;
 import android.os.Process;
 import android.os.SystemClock;
-import android.support.v4.app.NotificationCompat.Builder;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
-import android.view.Window;
 import android.view.animation.AnimationUtils;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
@@ -47,13 +36,11 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import cn.jpush.android.api.JPushInterface;
+
 import com.baidu.location.BDLocation;
-import com.baidu.location.LocationClient;
 import com.dodowaterfall.widget.ScaleImageView;
 import com.example.android.bitmapfun.util.ImageFetcher;
 import com.ismartgo.app.application.AndroidApplication;
-import com.ismartgo.app.bean.CurrentLocationInfo;
 import com.ismartgo.app.bean.Goods;
 import com.ismartgo.app.bean.IsNewMsg;
 import com.ismartgo.app.bean.Store;
@@ -61,10 +48,7 @@ import com.ismartgo.app.bean.User;
 import com.ismartgo.app.common.CommonUtils;
 import com.ismartgo.app.eventbus.HomeActivityEvent;
 import com.ismartgo.app.grid.SmartStraggeredGridView;
-import com.ismartgo.app.grid.SmartStraggeredGridView.IXListViewListener;
-import com.ismartgo.app.grid.SmartStraggeredGridView.OnScrollState;
 import com.ismartgo.app.grid.location.ToolLocation;
-import com.ismartgo.app.grid.location.ToolLocation.InterfaceBDLocation;
 import com.ismartgo.app.grid.utils.DisplayUtil;
 import com.ismartgo.app.grid.utils.DistanceConversionUtils;
 import com.ismartgo.app.grid.view.HomeHeadView;
@@ -86,32 +70,34 @@ import com.ismartgo.app.tools.StringUtils;
 import com.ismartgo.app.url.ResultCode;
 import com.ismartgo.app.url.Url;
 import com.ismartgo.app.utils.UMengStatisticsUtils;
+import com.ismartgo.apppub.R;
 import com.ismartgo.beacon.impl.SmartgoBeanImpl;
 import com.ismartgo.beacon.util.ScreenUtil;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.fb.FeedbackAgent;
 import com.umeng.fb.SyncListener;
-import com.umeng.fb.model.Conversation;
 import com.umeng.fb.model.Reply;
 import com.umeng.update.UmengUpdateAgent;
 import com.yolanda.nohttp.Logger;
 import com.yolanda.nohttp.Response;
-import de.greenrobot.event.EventBus;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
-import org.json.JSONException;
-import org.json.JSONObject;
+
+import cn.jpush.android.api.JPushInterface;
+import de.greenrobot.event.EventBus;
 
 public class HomeActivity extends BaseActivity
   implements View.OnClickListener, SmartStraggeredGridView.IXListViewListener, ToolLocation.InterfaceBDLocation, SwipeRefreshLayout.OnRefreshListener, SmartStraggeredGridView.OnScrollState
@@ -235,16 +221,20 @@ public class HomeActivity extends BaseActivity
     }
   }
 
+  /**
+   * 豆子 该怎么弹,
+   * @param paramString
+   */
   private void displayPopWin(String paramString)
   {
-    View localView = LayoutInflater.from(this).inflate(2130903118, null);
+    View localView = LayoutInflater.from(this).inflate(R.layout.earn_beans_success, null);
     ((TextView)localView.findViewById(2131231043)).setText(String.valueOf(paramString));
     this.popupWindow = new PopupWindow(localView, -1, -2);
     this.popupWindow.setTouchable(true);
     this.popupWindow.setOutsideTouchable(true);
     this.popupWindow.setBackgroundDrawable(new BitmapDrawable(getResources(), null));
     this.popupWindow.setAnimationStyle(2131427346);
-    paramString = LayoutInflater.from(this).inflate(2130903042, null);
+    paramString = LayoutInflater.from(this).inflate(R.layout.acitivty_home_headerview, null);
     this.popupWindow.showAtLocation(paramString, 17, 0, 0);
     if (SharedPreferenceUtil.getVoiceSwitch(this) == 1)
       startSuccessPlayer();
@@ -253,6 +243,7 @@ public class HomeActivity extends BaseActivity
 
   private void getBeaNumbers()
   {
+    //得到bean 豆子的数量
     this.application = ((AndroidApplication)getApplication());
     this.user = this.application.getUser();
     this.application.addActivity(this);
@@ -265,6 +256,10 @@ public class HomeActivity extends BaseActivity
       return;
     }
   }
+
+  /**
+   * getBea   每天
+   */
 
   private void getBeansAtFirstOpenEveryDay()
   {
@@ -355,6 +350,7 @@ public class HomeActivity extends BaseActivity
     return localRunningAppProcessInfo.processName;
   }
 
+  //请求
   private void getMsgRequest(int paramInt1, int paramInt2)
   {
     this.msgRequest.initParams(paramInt1, paramInt2, 1);
@@ -390,9 +386,9 @@ public class HomeActivity extends BaseActivity
 
   private void initView(HomeHeadView paramHomeHeadView)
   {
-    this.imgv_msg = ((RelativeLayout)findViewById(2131230913));
+    this.imgv_msg = ((RelativeLayout)findViewById(R.id.imgv_new_msg));
     this.imgv_msg.setOnClickListener(new View.OnClickListener()
-    {
+    { // 消息的点击
       public void onClick(View paramAnonymousView)
       {
         UMengStatisticsUtils.homeMessage(HomeActivity.this);
@@ -521,7 +517,7 @@ public class HomeActivity extends BaseActivity
 
   private void startSuccessPlayer()
   {
-    MediaPlayer localMediaPlayer = MediaPlayer.create(this, 2131034116);
+    MediaPlayer localMediaPlayer = MediaPlayer.create(this, R.raw.shake_match);
     localMediaPlayer.setLooping(false);
     localMediaPlayer.start();
   }
@@ -707,8 +703,9 @@ public class HomeActivity extends BaseActivity
   {
     super.onCreate(paramBundle);
     getWindow().setBackgroundDrawable(null);
-    setContentView(2130903061);
+    setContentView(R.layout.acitivtygroup_home2);
     Log.i("Test", "onCreate");
+    //推送
     this.jpush = new JPushSetAlias(getApplicationContext());
     if (CommonUtils.JPUSH_EXTRA != null)
     {
@@ -718,39 +715,36 @@ public class HomeActivity extends BaseActivity
       startActivity(paramBundle);
     }
     this.headerHeight = ScreenUtil.dip2px(this, 362.0F);
-    this.titleLayout = ((LinearLayout)findViewById(2131230910));
+    this.titleLayout = ((LinearLayout)findViewById(R.id.abc));
+    //整个搜素条的  数据记录
     this.titleLayout.setBackgroundColor(0);
-    new FeedbackAgent(this).getDefaultConversation().sync(new SyncListener()
-    {
-      public void onReceiveDevReply(List<Reply> paramAnonymousList)
-      {
+    new FeedbackAgent(this).getDefaultConversation().sync(new SyncListener() {
+      public void onReceiveDevReply(List<Reply> paramAnonymousList) {
         if ((paramAnonymousList == null) || (paramAnonymousList.size() == 0))
           return;
-        if (paramAnonymousList.size() == 1);
-        for (paramAnonymousList = ((Reply)paramAnonymousList.get(0)).content; ; paramAnonymousList = "有 " + paramAnonymousList.size() + "条反馈")
-          try
-          {
-            NotificationManager localNotificationManager = (NotificationManager)HomeActivity.mContext.getSystemService("notification");
+        if (paramAnonymousList.size() == 1) ;
+        for (paramAnonymousList = ((Reply) paramAnonymousList.get(0)).content; ; paramAnonymousList = "有 " + paramAnonymousList.size() + "条反馈")
+          try {
+            NotificationManager localNotificationManager = (NotificationManager) HomeActivity.mContext.getSystemService("notification");
             Object localObject = new Intent(HomeActivity.mContext, UMengFbActivity.class);
-            ((Intent)localObject).setFlags(131072);
-            int i = (int)SystemClock.uptimeMillis();
-            localObject = PendingIntent.getActivity(HomeActivity.mContext, i, (Intent)localObject, 134217728);
+            ((Intent) localObject).setFlags(131072);
+            int i = (int) SystemClock.uptimeMillis();
+            localObject = PendingIntent.getActivity(HomeActivity.mContext, i, (Intent) localObject, 134217728);
             i = HomeActivity.mContext.getPackageManager().getPackageInfo(HomeActivity.mContext.getPackageName(), 0).applicationInfo.icon;
-            localNotificationManager.notify(0, new NotificationCompat.Builder(HomeActivity.mContext).setSmallIcon(i).setContentTitle("有新的回复").setTicker("有新的回复").setContentText(paramAnonymousList).setAutoCancel(true).setContentIntent((PendingIntent)localObject).build());
+            localNotificationManager.notify(0, new NotificationCompat.Builder(HomeActivity.mContext).setSmallIcon(i).setContentTitle("有新的回复").setTicker("有新的回复").setContentText(paramAnonymousList).setAutoCancel(true).setContentIntent((PendingIntent) localObject).build());
             return;
-          }
-          catch (Exception paramAnonymousList)
-          {
+          } catch (Exception paramAnonymousList) {
             paramAnonymousList.printStackTrace();
             return;
           }
       }
 
-      public void onSendUserReply(List<Reply> paramAnonymousList)
-      {
+      public void onSendUserReply(List<Reply> paramAnonymousList) {
       }
     });
+    //友盟更新
     umengUpdate();
+    //蓝牙
     MyIbeacon.getInstance(getBaseContext()).startScan();
     mContext = this;
     this.application = ((AndroidApplication)getApplication());
@@ -772,6 +766,7 @@ public class HomeActivity extends BaseActivity
     this.mGridView.setXListViewListener(this);
     this.mGridView.setOnScrollState(this);
     int i = SharedPreferenceUtil.getGuideCount(this);
+    //地理位置
     Object localObject = SharedPreferenceUtil.getLocationInfo(this);
     paramBundle = ((SharedPreferences)localObject).getString("log", "");
     String str = ((SharedPreferences)localObject).getString("lat", "");
@@ -788,6 +783,7 @@ public class HomeActivity extends BaseActivity
         SharedPreferenceUtil.setUsed(this);
         SharedPreferenceUtil.setGuideCount(this, 1);
       }
+      //怎么把mGridView和HomeHeadView
       this.headerView = new HomeHeadView(this, this.mGridView, this.mAdapter, this.mInfos);
       if ((AndroidApplication.getInstance().getCurrentLocation() != null) && (AndroidApplication.getInstance().getCurrentLocation().getCityId() != 0))
         this.headerView.initData(true);

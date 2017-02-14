@@ -120,6 +120,7 @@ public class Tab_Container_Activity extends TabHostActivity
     this.mItems.add(localTabItem5);
   }
 
+  //把布局传过来
   protected void setTabItemTextView(TextView paramTextView, ImageView paramImageView, LinearLayout paramLinearLayout, int paramInt)
   {
     paramTextView.setText(((TabItem)this.mItems.get(paramInt)).getTitle());
