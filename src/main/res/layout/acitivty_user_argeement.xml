@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_10" android:overScrollMode="never">
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_about" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dimen_5" />
+    </ScrollView>
+</LinearLayout>

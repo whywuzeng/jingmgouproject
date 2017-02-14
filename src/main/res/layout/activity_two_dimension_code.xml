@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_two_dimension" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_40" android:layout_marginRight="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_15">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_35">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_google_play" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:text="通过安全认证的官方下载" />
+        </LinearLayout>
+        <ImageView android:layout_width="235.0dip" android:layout_height="235.0dip" android:layout_marginTop="@dimen/dimen_10" android:src="@drawable/two_dimension_code" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18" android:layout_marginBottom="@dimen/dimen_24" android:text="扫一扫上面的二维码图案,下载App" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/screen_lt" android:background="@color/color_f2572d" android:layout_width="fill_parent" android:layout_height="@dimen/title_height_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/color_666666" android:id="@id/pv_back" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableLeft="@drawable/back" android:onClick="back" />
+    <TextView android:textSize="@dimen/font_large" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_title" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="扫描商品" android:lines="1" android:singleLine="true" android:layout_weight="3.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/pv_screening" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/screening_filter" />
+</LinearLayout>

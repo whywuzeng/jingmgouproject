@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_Item_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_52"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tab_item_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_item_selector" android:adjustViewBounds="true" />
+    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/bt_fontcolor_selector" android:gravity="center_horizontal" android:id="@id/tab_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2" android:text="首页" />
+</LinearLayout>

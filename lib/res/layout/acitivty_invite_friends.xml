@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_parent" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollview_invite_friend" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/base_header" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_117" layout="@layout/ad_banner" />
+                <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的邀请码" />
+                    <TextView android:textSize="@dimen/textsize_22" android:textColor="@color/color_f2572d" android:textColorHint="@color/color_cccccc" android:gravity="left|center" android:id="@id/tv_my_invite_code" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:layout_weight="1.0" android:textIsSelectable="true" />
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/tv_copy" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="点击复制" />
+                </LinearLayout>
+                <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+                <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginTop="@dimen/dimen_15">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当面邀请" />
+                    <LinearLayout android:gravity="right|center" android:id="@id/layout_invite_friend" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_cccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="请好友扫描二维码" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:src="@drawable/arrow_right_black" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+                <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享邀请" />
+                </LinearLayout>
+                <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <HorizontalScrollView android:id="@id/invite_horizontalscrollview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_109">
+                            <ImageView android:id="@id/img_left" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="100.0dip" android:src="@drawable/arrow_left_black" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:onClick="onClick">
+                                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="@dimen/dimen_62" android:layout_height="wrap_content" android:text="微信" android:drawableTop="@drawable/logo_wechat" android:drawablePadding="@dimen/dimen_5" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_wechat_moments" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_50" android:onClick="onClick">
+                                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="@dimen/dimen_62" android:layout_height="wrap_content" android:text="朋友圈" android:drawableTop="@drawable/logo_wechatmoments" android:drawablePadding="@dimen/dimen_5" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_qq" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_50" android:onClick="onClick">
+                                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="@dimen/dimen_62" android:layout_height="wrap_content" android:text="QQ" android:drawableTop="@drawable/logo_qq" android:drawablePadding="@dimen/dimen_5" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_weibo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_50" android:onClick="onClick">
+                                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="@dimen/dimen_62" android:layout_height="wrap_content" android:text="微博" android:drawableTop="@drawable/logo_sinaweibo" android:drawablePadding="@dimen/dimen_5" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_qzone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_50" android:layout_weight="1.0" android:onClick="onClick">
+                                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="@dimen/dimen_62" android:layout_height="wrap_content" android:text="QQ空间" android:drawableTop="@drawable/logo_qzone" android:drawablePadding="@dimen/dimen_5" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_send_msg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_50" android:layout_marginRight="@dimen/dimen_10" android:layout_weight="1.0" android:onClick="onClick">
+                                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="@dimen/dimen_62" android:layout_height="wrap_content" android:text="短信" android:drawableTop="@drawable/logo_send_message" android:drawablePadding="@dimen/dimen_5" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/img_right" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="100.0dip" android:src="@drawable/arrow_right_black" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:id="@id/view_up_bg" android:background="#55000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/layout_invite_history" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10" android:layout_below="@id/scrollview_invite_friend">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_history" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10">
+            <LinearLayout android:gravity="center" android:id="@id/layout_beans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25">
+                <View android:background="@color/color_333333" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_line" />
+                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_5" android:text="已获得" />
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:gravity="center" android:id="@id/tv_invite_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0豆" />
+                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_5" android:text="的邀请奖励" />
+                <View android:background="@color/color_333333" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_line" />
+            </LinearLayout>
+            <com.miloisbadboy.view.PullToRefreshView android:orientation="vertical" android:id="@id/pull_refresh_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10">
+                <ListView android:id="@id/invite_history_listview" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="#ff000000" />
+            </com.miloisbadboy.view.PullToRefreshView>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/layout_arrow" android:background="@drawable/bg_invite_history_top" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="-10.0dip" android:layout_alignTop="@id/layout_history" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/img_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:src="@drawable/ic_arrow_up__invite_history" android:scaleType="center" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

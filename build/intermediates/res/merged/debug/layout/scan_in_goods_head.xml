@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small">
+        <include android:visibility="gone" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" layout="@layout/gap_line" />
+        <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal" android:text="本店可赚取精明豆" />
+        <include android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" layout="@layout/gap_line" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_75" android:layout_marginTop="@dimen/dimen_10">
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sign_in" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/layout_sign" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_toRightOf="@id/iv_sign" android:layout_centerInParent="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:id="@id/tv_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="到店签到赚豆" />
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_1" android:text="0精明豆" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/img_has_signed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:src="@drawable/ic_has_signed" android:layout_toRightOf="@id/iv_sign" />
+        </RelativeLayout>
+        <View android:background="@drawable/line_2" android:layout_width="1.0dip" android:layout_height="@dimen/dimen_50" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:src="@drawable/ic_scan_product" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扫描商品可赚" />
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:id="@id/tv_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_1" android:text="0精明豆" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" android:text="在店內扫描以下商品,即可賺取精明豆" />
+</LinearLayout>

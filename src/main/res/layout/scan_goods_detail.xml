@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/scan_layout" android:background="@color/gray_white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bt_select" android:background="@drawable/count_down_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/font_normal" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="领豆倒计时：" />
+        <TextView android:textSize="@dimen/font_huge" android:textColor="@color/orange" android:id="@id/count_down_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+        <TextView android:textSize="@dimen/font_huge" android:textColor="@color/orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="s" />
+    </LinearLayout>
+    <include android:id="@id/screen" layout="@layout/screening_propage_head" />
+    <LinearLayout android:orientation="vertical" android:id="@id/screen_brand_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bt_select" android:layout_below="@id/screen">
+        <WebView android:id="@id/goods_detail" android:background="@color/darkbg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/line" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>

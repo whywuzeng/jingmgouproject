@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="58.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="58.0dip" android:minHeight="58.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:id="@id/view1" android:background="@color/color_e7e7e7" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_10" />
+            <ImageView android:id="@id/img_tag_latest_logistics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_latest_logistics" />
+            <View android:background="@color/color_e7e7e7" android:layout_width="@dimen/dimen_line" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_12">
+            <TextView android:textSize="@dimen/textsize_10" android:textColor="@color/color_999999" android:id="@id/tv_logistics_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="fdsfdsfdsfdsfdsfsdfdsfdsfds" />
+            <TextView android:textSize="@dimen/textsize_10" android:textColor="@color/color_999999" android:id="@id/tv_logistics_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2016-01-08" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" android:layout_marginLeft="20.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

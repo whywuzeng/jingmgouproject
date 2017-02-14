@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_background" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="原密码" />
+            <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+            <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:id="@id/et_old_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:hint="请输入原密码" android:singleLine="true" android:inputType="textPassword" />
+        </LinearLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="新密码" />
+            <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+            <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:id="@id/et_new_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:hint="需组合数字、字母达6位以上" android:singleLine="true" android:inputType="textPassword" />
+        </LinearLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="再输入" />
+            <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+            <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:id="@id/et_confirm_new_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:hint="再次输入新密码" android:singleLine="true" android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:enabled="false" android:textSize="@dimen/textsize_17" android:textColor="@color/white" android:id="@id/btn_confirm" android:background="@drawable/bg_btn_null" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15" android:text="确认修改" />
+</LinearLayout>

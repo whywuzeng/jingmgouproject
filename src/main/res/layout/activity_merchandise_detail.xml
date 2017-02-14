@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bt_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:layout_gravity="top" android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/lyt_collect" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_44" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_black" android:gravity="center" android:id="@id/ct_collect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" android:text="收藏" />
+                <ImageView android:textColor="@color/gray_black" android:id="@id/mer_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/colleation_01" />
+            </LinearLayout>
+            <View android:layout_gravity="center_vertical" android:background="@color/color_e7e7e7" android:layout_width="@dimen/dimen_line" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/lyt_scan" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_44" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_black" android:gravity="center" android:id="@id/ct_scan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" android:text="扫描" />
+                <ImageView android:id="@id/mer_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_1" />
+            </LinearLayout>
+            <View android:layout_gravity="center_vertical" android:background="@color/color_e7e7e7" android:layout_width="@dimen/dimen_line" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/lyt_share" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_44" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_black" android:gravity="center" android:id="@id/ct_share" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" android:text="分享" />
+                <ImageView android:id="@id/mer_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/screen" layout="@layout/screening_propage_head" />
+    <View android:id="@id/v_screen_line" android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" android:layout_below="@id/screen" />
+    <LinearLayout android:orientation="vertical" android:id="@id/screen_brand_layout" android:background="@color/darkbg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bt_select" android:layout_below="@id/v_screen_line">
+        <com.ismartgo.app.tools.ProgressWebView android:id="@id/goods_detail" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/line" android:dividerHeight="1.0dip" />
+        <ScrollView android:id="@id/layout_no_url" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+                <TextView android:textSize="@dimen/font_normal" android:id="@id/tv_goods_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_tiny" />
+                <TextView android:textSize="@dimen/font_normal" android:textColor="@color/orange" android:id="@id/tv_goods_price" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_tiny" />
+                <TextView android:textSize="@dimen/font_small" android:id="@id/tv_goods_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_tiny" />
+                <TextView android:textSize="@dimen/font_normal" android:id="@id/tv_shop_name" android:paddingTop="@dimen/spacing_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_tiny" />
+                <TextView android:textSize="@dimen/font_small" android:id="@id/tv_shop_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_tiny" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

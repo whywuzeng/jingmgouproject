@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/line_border_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.ismartgo.apppub">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_109">
+        <com.dodowaterfall.widget.ScaleImageView android:id="@id/iv_logo" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_109" android:src="@drawable/ic_flashlight" android:scaleType="fitCenter" app:roundWidth="@dimen/dimen_5" app:roundHeight="@dimen/dimen_5" app:roundLiftUp="true" app:roundRightUp="true" />
+        <com.dodowaterfall.widget.ScaleImageView android:id="@id/img_new_gift_tag" android:visibility="gone" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:src="@drawable/tag_new_gift" android:layout_alignParentRight="true" app:roundWidth="@dimen/dimen_5" app:roundHeight="@dimen/dimen_5" app:roundRightUp="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/line_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_7" android:paddingRight="@dimen/dimen_7" android:layout_width="fill_parent" android:layout_height="33.0dip">
+        <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_5">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/beans_small" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@id/tv_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

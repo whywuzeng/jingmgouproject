@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:scrollbars="none" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/base_header" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15" android:src="@drawable/ic_about" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15">
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="版本号" />
+                <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_version" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginTop="@dimen/dimen_15">
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="版权" />
+                <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="广州智选网络科技有限公司" android:singleLine="true" />
+            </LinearLayout>
+            <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layout_contact_us" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="客服" />
+                <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+                <TextView android:textSize="@dimen/textsize_14" android:gravity="center_vertical" android:autoLink="phone" android:linksClickable="true" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:text="400-6177-183" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:src="@drawable/arrow_right_black" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/white" android:paddingTop="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:paddingBottom="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_204" android:layout_marginTop="@dimen/dimen_15">
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_56" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="简介" />
+                <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+                <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_about" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:lineSpacingExtra="@dimen/dimen_5" />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dimen_15">
+            <TextView android:id="@id/tv_agreement" android:padding="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《用户服务协议》" />
+            <View android:background="@color/color_999999" android:visibility="gone" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10" android:layout_marginBottom="13.0dip" />
+            <TextView android:padding="@dimen/dimen_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免责声明 " />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

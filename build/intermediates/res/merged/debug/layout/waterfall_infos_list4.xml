@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/waterfull_style_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/news_list" android:background="@drawable/bg_border_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <FrameLayout android:id="@id/goods_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dodowaterfall.widget.ScaleImageView android:layout_gravity="center_horizontal" android:id="@id/news_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" app:roundWidth="@dimen/dimen_5" app:roundHeight="@dimen/dimen_5" app:roundLiftUp="true" app:roundRightUp="true"
+              xmlns:app="http://schemas.android.com/apk/res/com.ismartgo.apppub" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="top|left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.ismartgo.app.ownself.view.FilletImageView android:id="@id/mer_scan" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_qr_code" app:roundWidth="5.0dip" app:roundHeight="5.0dip"
+                      xmlns:app="http://schemas.android.com/apk/res/com.ismartgo.apppub" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_validity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_13">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clock" />
+                    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:id="@id/mer_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:text="10月10日前有效" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35">
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+        </LinearLayout>
+        <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/store_info_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="left" android:id="@id/shopLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_7" android:adjustViewBounds="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_7" android:layout_marginRight="@dimen/dimen_7" android:layout_weight="1.0">
+                <com.ismartgo.app.ownself.view.AlwaysMarqueeTextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="right|center" android:id="@id/store_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="体育中心东店1（棠下店）" android:maxLines="1" android:maxEms="7" android:scrollHorizontally="true" android:singleLine="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_location" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/map" />
+                    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/store_distance" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0.2km" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_scanproduct" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_scan" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/scan_2" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_2" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:gravity="center" android:id="@id/tv_beans" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="100" android:drawableLeft="@drawable/beans_small" android:drawablePadding="@dimen/dimen_4" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+</RelativeLayout>

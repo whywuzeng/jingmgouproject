@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/ad_banner" />
+    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_666666" android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:text="@string/scan_good" />
+</LinearLayout>

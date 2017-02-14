@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_mine" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_120"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ismartgo.app.grid.CircleImageView android:id="@id/img_header_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/dimen_15" app:border_width="3.0dip" app:border_color="@color/color_fbaa7d" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/textsize_15" android:textColor="@color/white" android:id="@id/tv_nickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我是一个昵称" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout_client_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_authenticate_1" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:id="@id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="\ 15011896535" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout_third_login" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_set_mobile_small" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:id="@id/tv_third_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="@string/set_mobile" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout_user_rank" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_edit_1" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="@string/continue_sign" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:id="@id/tv_sign_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3" android:text="123天" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/dimen_14" android:layout_marginLeft="@dimen/dimen_10" android:src="@drawable/icon_top_1" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:id="@id/tv_ranking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="50名" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:src="@drawable/icon_more01" />
+</LinearLayout>

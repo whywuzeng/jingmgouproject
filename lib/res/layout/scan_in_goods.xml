@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pv="http://schemas.android.com/apk/res/com.ismartgo.apppub">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_1" android:background="@color/color_f2572d" android:layout_width="fill_parent" android:layout_height="@dimen/title_height_normal" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center_vertical" android:padding="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:onClick="back" />
+        <com.ismartgo.app.ownself.view.AlwaysMarqueeTextView android:textSize="@dimen/font_large" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_title" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_huge" android:layout_marginTop="@dimen/spacing_small" android:layout_marginRight="@dimen/spacing_huge" android:layout_marginBottom="@dimen/spacing_small" android:text="扫描" android:lines="1" android:singleLine="true" android:layout_weight="3.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/pv_screening" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/screening_filter" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_scan_product" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/textsize_19" android:textColor="@color/white" android:id="@id/btn_scan_product" android:background="@drawable/bg_btn" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_margin="@dimen/dimen_10" android:text="马上扫描 " />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_scan_product" android:layout_below="@id/layout_1">
+        <me.maxwin.view.XListView android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" pv:plaColumnPaddingLeft="10.0dip" pv:plaColumnPaddingRight="10.0dip" />
+        <TextView android:textColor="@color/gray_black" android:gravity="center" android:id="@id/tv_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="暂无可以扫描的商品" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/news_list" android:background="@drawable/news_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dodowaterfall.widget.ScaleImageView android:id="@id/news_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@null" />
+    <TextView android:textColor="#ff656565" android:id="@id/news_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" />
+    <TextView android:textColor="#ff9f9f9f" android:gravity="right" android:layout_gravity="bottom|right|center" android:id="@id/news_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

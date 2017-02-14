@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="28.0sp" android:textColor="@color/keyword_textcolor_selector" android:gravity="center" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/img_feature" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/KeyBoardTheme" />
+        </LinearLayout>
+        <View android:background="#ffe7f5ff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="#ffe7f5ff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/color_f2572d" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44">
+        <ImageView android:id="@id/tv_left" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back" android:layout_centerVertical="true" android:onClick="back" />
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_receipt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:gravity="center" android:id="@id/rb_all" android:background="@drawable/bg_receipt_all" android:layout_width="53.0dip" android:layout_height="26.0dip" android:checked="true" android:button="@null" android:text="全部" />
+                <RadioButton android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:gravity="center" android:id="@id/rb_mine" android:background="@drawable/bg_receipt_mine" android:layout_width="53.0dip" android:layout_height="26.0dip" android:button="@null" android:text="我的" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/layout_continer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

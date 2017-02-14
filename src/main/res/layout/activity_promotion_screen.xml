@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/data_nothing_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bt_select" android:background="@color/darkbg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/spacing_tiny" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_black" android:gravity="center" android:id="@id/cb_brand_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" android:text="全选" />
+            <CheckBox android:textColor="@color/gray_black" android:id="@id/brand_all_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/bt_screen_checked" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/line_2" android:layout_width="2.0dip" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/spacing_tiny" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_black" android:gravity="center" android:id="@id/cb_brand_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" android:text="全不选" />
+            <CheckBox android:textColor="@color/gray_black" android:id="@id/brand_none_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/bt_screen_checked" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/screen" android:background="@color/color_f2572d" android:layout_width="fill_parent" android:layout_height="@dimen/title_height_normal">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/pv_back" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" />
+        <TextView android:textSize="@dimen/textsize_17" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_title" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_huge" android:layout_marginTop="@dimen/spacing_small" android:layout_marginRight="@dimen/spacing_huge" android:layout_marginBottom="@dimen/spacing_small" android:text="筛选品牌" android:singleLine="true" android:layout_weight="3.0" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/pv_screening" android:padding="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/screen_brand_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bt_select" android:layout_below="@id/screen">
+        <ListView android:id="@id/screen_brand" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/line" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>

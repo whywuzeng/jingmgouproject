@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_130" android:minHeight="@dimen/dimen_130"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="@dimen/dimen_10" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_15" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_100">
+        <ImageView android:id="@id/img_activity" android:layout_width="@dimen/dimen_130" android:layout_height="@dimen/dimen_80" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_80" android:layout_marginLeft="@dimen/dimen_5">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_activity_name" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_20" android:text="美赞臣小票活动" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_distance" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20" android:text="距离:" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:src="@drawable/map" />
+                <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/tv_distance" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_4" android:text="1129.5公里" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_20" android:text="日期:" />
+                <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_4" android:text="12月12日-12月13日" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_verify" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/layout_verify_state" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20">
+                    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/tv_join" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20" android:text="参加:" />
+                    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/tv_join_count" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_4" android:text="第2次" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_verify_state" android:background="#ffff963b" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_19" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_30">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人气:" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@id/tv_popularity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:text="11" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="奖励:" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:gravity="center_vertical" android:id="@id/tv_reward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:text="100豆" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

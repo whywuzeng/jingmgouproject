@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/color_ebebeb" android:paddingLeft="@dimen/dimen_3" android:paddingRight="@dimen/dimen_3" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/under_02" android:paddingLeft="@dimen/dimen_25" android:paddingRight="@dimen/dimen_25" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_30">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="华润玩家购物现金券" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_black" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/dimen_14" android:textColor="@color/color_f2572d" android:id="@id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="券号:001" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期至: 2015-04-20" android:layout_alignBottom="@id/tv_number" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

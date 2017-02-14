@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <include android:visibility="gone" layout="@layout/data_nothing_layout" />
+    <com.ismartgo.app.ownself.view.AbPullToRefreshView android:id="@id/mPullToRefreshView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lv_gift" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10" android:divider="#00000000" />
+    </com.ismartgo.app.ownself.view.AbPullToRefreshView>
+</LinearLayout>

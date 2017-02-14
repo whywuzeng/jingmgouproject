@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <com.ismartgo.app.tools.ProgressWebView android:id="@id/receipt_detail_web" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@drawable/line" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+    <Button android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:id="@id/btn_upload" android:background="@drawable/bg_btn" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_margin="@dimen/dimen_10" android:text="立即上传" />
+</LinearLayout>

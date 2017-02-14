@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="@dimen/dimen_30" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_botton_line" android:background="@color/color_dddddd" android:layout_width="@dimen/dimen_1" android:layout_height="@dimen/dimen_20" android:layout_centerHorizontal="true" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/dimen_20" android:src="@drawable/receipt_list_botton" android:layout_below="@id/v_botton_line" android:layout_centerHorizontal="true" />
+</RelativeLayout>

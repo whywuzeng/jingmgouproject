@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_ebebeb" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/dimen_15" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_15" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_100" android:layout_marginTop="@dimen/dimen_10">
+                <ImageView android:id="@id/iv_pic" android:background="#ff000000" android:layout_width="@dimen/dimen_130" android:layout_height="@dimen/dimen_80" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_toRightOf="@id/iv_pic" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/under_3" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_90" android:layout_marginTop="@dimen/dimen_line">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="券号" />
+                    <TextView android:textSize="@dimen/textsize_17" android:textColor="@color/color_f2572d" android:id="@id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 5555555555" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期至: 2015-04-20" android:layout_alignBottom="@id/layout_1" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

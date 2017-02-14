@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_top" layout="@layout/base_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/continer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15" android:layout_below="@id/layout_top">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_65" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="收件人" />
+            <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+            <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:id="@id/et_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:hint="填写您的姓名" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_65" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="手机号码" />
+            <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+            <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:id="@id/et_phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:hint="填写您的手机号码" android:singleLine="true" android:maxLength="11" android:inputType="phone" />
+        </LinearLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_65" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="选择省市" />
+            <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:gravity="center_vertical" android:id="@id/tv_address" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:hint="请选择您所在的地区" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10" android:src="@drawable/arrow_right_black" />
+        </LinearLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_65" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="详细地址" />
+            <View android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_line" android:layout_height="@dimen/dimen_23" />
+            <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:id="@id/et_detail_address" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15" android:hint="填写您的详细地址" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:enabled="false" android:textSize="@dimen/textsize_17" android:textColor="@color/white" android:id="@id/btn_submit" android:background="@drawable/bg_btn_null" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15" android:text="提交" android:layout_below="@id/continer" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_address_select" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_vertical" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35">
+            <Button android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/btn_cancel" android:background="@null" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="取消" />
+            <Button android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:id="@id/btn_ok" android:background="@null" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="确定" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <kankan.wheel.widget.WheelView android:id="@id/id_province" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <kankan.wheel.widget.WheelView android:id="@id/id_city" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <kankan.wheel.widget.WheelView android:id="@id/id_district" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

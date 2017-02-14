@@ -1,0 +1,115 @@
+package com.ab.view.slidingmenu;
+
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup.LayoutParams;
+
+public class SlidingPreferenceActivity extends PreferenceActivity
+  implements SlidingActivityBase
+{
+  private SlidingActivityHelper mHelper;
+
+  public View findViewById(int paramInt)
+  {
+    View localView = super.findViewById(paramInt);
+    if (localView != null)
+      return localView;
+    return this.mHelper.findViewById(paramInt);
+  }
+
+  public SlidingMenu getSlidingMenu()
+  {
+    return this.mHelper.getSlidingMenu();
+  }
+
+  public void onCreate(Bundle paramBundle)
+  {
+    this.mHelper = new SlidingActivityHelper(this);
+    super.onCreate(paramBundle);
+    this.mHelper.onCreate(paramBundle);
+  }
+
+  public boolean onKeyUp(int paramInt, KeyEvent paramKeyEvent)
+  {
+    boolean bool = this.mHelper.onKeyUp(paramInt, paramKeyEvent);
+    if (bool)
+      return bool;
+    return super.onKeyUp(paramInt, paramKeyEvent);
+  }
+
+  public void onPostCreate(Bundle paramBundle)
+  {
+    super.onPostCreate(paramBundle);
+    this.mHelper.onPostCreate(paramBundle);
+  }
+
+  protected void onSaveInstanceState(Bundle paramBundle)
+  {
+    super.onSaveInstanceState(paramBundle);
+    this.mHelper.onSaveInstanceState(paramBundle);
+  }
+
+  public void setBehindContentView(int paramInt)
+  {
+    setBehindContentView(getLayoutInflater().inflate(paramInt, null));
+  }
+
+  public void setBehindContentView(View paramView)
+  {
+    setBehindContentView(paramView, new ViewGroup.LayoutParams(-1, -1));
+  }
+
+  public void setBehindContentView(View paramView, ViewGroup.LayoutParams paramLayoutParams)
+  {
+    this.mHelper.setBehindContentView(paramView, paramLayoutParams);
+  }
+
+  public void setContentView(int paramInt)
+  {
+    setContentView(getLayoutInflater().inflate(paramInt, null));
+  }
+
+  public void setContentView(View paramView)
+  {
+    setContentView(paramView, new ViewGroup.LayoutParams(-1, -1));
+  }
+
+  public void setContentView(View paramView, ViewGroup.LayoutParams paramLayoutParams)
+  {
+    super.setContentView(paramView, paramLayoutParams);
+    this.mHelper.registerAboveContentView(paramView, paramLayoutParams);
+  }
+
+  public void setSlidingActionBarEnabled(boolean paramBoolean)
+  {
+    this.mHelper.setSlidingActionBarEnabled(paramBoolean);
+  }
+
+  public void showContent()
+  {
+    this.mHelper.showContent();
+  }
+
+  public void showMenu()
+  {
+    this.mHelper.showMenu();
+  }
+
+  public void showSecondaryMenu()
+  {
+    this.mHelper.showSecondaryMenu();
+  }
+
+  public void toggle()
+  {
+    this.mHelper.toggle();
+  }
+}
+
+/* Location:           F:\一周备份\面试apk\希望代码没混淆\jingmgou\jingmgou2\classes-dex2jar.jar
+ * Qualified Name:     com.ab.view.slidingmenu.SlidingPreferenceActivity
+ * JD-Core Version:    0.6.2
+ */

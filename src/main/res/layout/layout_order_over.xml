@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@null" android:padding="@dimen/spacing_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/under" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_pic" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_large" android:id="@id/tv_tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_tiny" android:text="哎呀～精明豆不够啊！" />
+        <TextView android:textSize="@dimen/font_large" android:textColor="@color/gray_dark" android:id="@id/tv_tip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_tiny" android:text="兑换失败!" />
+        <Button android:id="@id/btn_confirm" android:background="@drawable/bg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_tiny" android:text="确定" style="@style/button_white_large" />
+    </LinearLayout>
+</LinearLayout>

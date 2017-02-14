@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="#ffe7f5ff" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_60">
+        <com.ismartgo.app.grid.CircleImageView android:id="@id/civ_shop_type" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="@dimen/dimen_15" android:src="@drawable/default_modify_receipt" app:border_width="1.0dip" app:border_color="@color/color_e7f5ff" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_2b3b50" android:id="@id/tv_shop_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" />
+        <TextView android:textSize="35.0sp" android:textColor="@color/color_2b3b50" android:gravity="right" android:id="@id/tv_total" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:text="0" android:layout_weight="1.0" android:inputType="numberDecimal" />
+    </LinearLayout>
+    <View android:background="#ffe7f5ff" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <GridView android:id="@id/keyboard" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/bg_item_keyboard" android:cacheColorHint="@color/trans" android:stretchMode="columnWidth" android:numColumns="4" android:overScrollMode="never" />
+</LinearLayout>

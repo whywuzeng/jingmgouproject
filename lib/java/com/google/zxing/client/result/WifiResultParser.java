@@ -1,0 +1,21 @@
+package com.google.zxing.client.result;
+
+import com.google.zxing.Result;
+
+final class WifiResultParser extends ResultParser
+{
+  public static WifiParsedResult parse(Result paramResult)
+  {
+    paramResult = paramResult.getText();
+    if ((paramResult == null) || (!paramResult.startsWith("WIFI:")))
+      return null;
+    String str1 = matchSinglePrefixedField("S:", paramResult, ';', false);
+    String str2 = matchSinglePrefixedField("P:", paramResult, ';', false);
+    return new WifiParsedResult(matchSinglePrefixedField("T:", paramResult, ';', false), str1, str2);
+  }
+}
+
+/* Location:           F:\一周备份\面试apk\希望代码没混淆\jingmgou\jingmgou2\classes-dex2jar.jar
+ * Qualified Name:     com.google.zxing.client.result.WifiResultParser
+ * JD-Core Version:    0.6.2
+ */

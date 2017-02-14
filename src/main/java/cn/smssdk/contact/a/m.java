@@ -1,0 +1,19 @@
+package cn.smssdk.contact.a;
+
+import android.util.Base64;
+
+public class m extends b
+{
+  public String b()
+  {
+    byte[] arrayOfByte = a("data15");
+    if (arrayOfByte != null)
+      return Base64.encodeToString(arrayOfByte, 2);
+    return null;
+  }
+}
+
+/* Location:           F:\一周备份\面试apk\希望代码没混淆\jingmgou\jingmgou2\classes-dex2jar.jar
+ * Qualified Name:     cn.smssdk.contact.a.m
+ * JD-Core Version:    0.6.2
+ */

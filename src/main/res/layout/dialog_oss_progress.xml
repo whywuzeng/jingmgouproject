@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/oss_dialog_bg" android:layout_width="@dimen/dimen_126" android:layout_height="@dimen/dimen_126"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_oss_progress" android:layout_width="@dimen/dimen_58" android:layout_height="@dimen/dimen_58" />
+    <TextView android:textSize="@dimen/dimen_17" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传中..." />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_listview_header_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pull_to_refresh_arrow" android:minWidth="30.0dip" />
+            <ProgressBar android:id="@id/pb_listview_header" android:visibility="gone" style="@style/customProgressBar" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/font_normal" android:textColor="#ff000000" android:id="@id/tv_listview_header_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下拉刷新" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray" android:id="@id/tv_listview_header_last_update_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="最近更新： 2014-10-10 12:56:12" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

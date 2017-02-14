@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pv="http://schemas.android.com/apk/res/com.ismartgo.apppub">
+    <include layout="@layout/base_header" />
+    <include android:visibility="gone" layout="@layout/layout_your_beans" />
+    <RelativeLayout android:id="@id/layout_my_beans" android:background="@color/white" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的精明豆" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_mybeacon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="111豆" android:drawableLeft="@drawable/ic_beans" android:drawableRight="@drawable/arrow_right_black" android:drawablePadding="@dimen/dimen_2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_10">
+        <LinearLayout android:gravity="center" android:id="@id/layout_beans" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/textsize_14" android:gravity="center" android:id="@id/tv_beans" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="豆子范围" android:drawableRight="@drawable/toggle_arrow_down" android:drawablePadding="@dimen/spacing_tiny" />
+        </LinearLayout>
+        <View android:background="@color/color_e7e7e7" android:layout_width="@dimen/dimen_line" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:id="@id/layout_clazz" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/textsize_14" android:gravity="center" android:id="@id/tv_class" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部分类" android:drawableRight="@drawable/toggle_arrow_down" android:drawablePadding="@dimen/spacing_tiny" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_dark" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/data_nothing_layout" android:visibility="gone" layout="@layout/data_nothing_layout" />
+        <com.miloisbadboy.view.PullToRefreshView android:orientation="vertical" android:id="@id/pull_refresh_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_15">
+            <GridView android:id="@id/reward_grid_view" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:verticalSpacing="@dimen/dimen_15" android:numColumns="2" />
+        </com.miloisbadboy.view.PullToRefreshView>
+    </RelativeLayout>
+</LinearLayout>

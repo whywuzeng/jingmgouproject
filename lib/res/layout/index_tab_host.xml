@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/tab_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_52" android:layout_alignParentBottom="true">
+            <TabWidget android:id="@android:id/tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_52" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:id="@id/v_tab_line" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" android:layout_above="@id/tab_bottom" />
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/v_tab_line" />
+        <LinearLayout android:paddingBottom="@dimen/dimen_7" android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_take_photo" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/icon_camera" />
+        </LinearLayout>
+    </RelativeLayout>
+</TabHost>

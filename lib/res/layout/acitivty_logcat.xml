@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="tip\n若蓝牙支持IBeacon,且处于IBeacon一米距离内,显示所在店名为空.请按如下方法操作:\n1:完全退出程序\n2:关闭手机蓝牙\n3:再次启动程序" />
+            <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_2" android:id="@id/tv_ibeacon_shop_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" />
+            <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray_2" android:id="@id/tv_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_small" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

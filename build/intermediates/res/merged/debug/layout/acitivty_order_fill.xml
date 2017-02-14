@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:scrollbars="none" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/layout_top" layout="@layout/base_header" />
+            <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/dimen_10" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_top">
+                <ImageView android:id="@id/iv_pic" android:layout_width="@dimen/dimen_203" android:layout_height="@dimen/dimen_126" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:text="这是一个礼品" android:layout_toRightOf="@id/iv_pic" android:layout_alignTop="@id/iv_pic" />
+                <TextView android:textSize="@dimen/textsize_17" android:textColor="@color/color_f2572d" android:id="@id/tv_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_toRightOf="@id/iv_pic" android:layout_alignBottom="@id/iv_pic" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+                <RelativeLayout android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数量:" android:layout_centerVertical="true" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageButton android:id="@id/ib_left" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30" android:src="@drawable/left" />
+                        <EditText android:gravity="center" android:id="@id/et_num" android:background="@drawable/middle" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_30" android:layout_marginLeft="@dimen/dimen_1" android:layout_marginRight="@dimen/dimen_1" android:text="1" android:maxLength="5" android:inputType="number" />
+                        <ImageButton android:id="@id/ib_right" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30" android:src="@drawable/right" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+                <RelativeLayout android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兑换后剩余豆数:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_remainBeans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0豆" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_addressee" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_68" android:layout_height="wrap_content" android:text="收件人:" />
+                    <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:id="@id/et_addressee" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_10" android:hint="请填写收件人姓名" android:singleLine="true" android:inputType="textPersonName" android:imeOptions="actionNext" />
+                </LinearLayout>
+                <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+                <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_68" android:layout_height="wrap_content" android:text="手机号码:" />
+                    <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:id="@id/et_phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_10" android:hint="请填写您的手机号码" android:maxLength="11" android:inputType="phone" android:imeOptions="actionNext" />
+                </LinearLayout>
+                <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_select_city" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_68" android:layout_height="wrap_content" android:text="选择省市:" />
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:gravity="center_vertical" android:id="@id/et_address" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_10" android:hint="请选择您所在的地区" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_black" />
+                </LinearLayout>
+                <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/layout_detail_address" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_68" android:layout_height="wrap_content" android:text="详细地址:" />
+                    <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_999999" android:id="@id/et_detail_address" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_10" android:hint="街道、楼牌号等" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layout_exchange_detail" android:background="@color/white" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginTop="@dimen/dimen_10">
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="兑换成功后，礼品会放在“我的消费券”中" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+                        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:layout_width="@dimen/dimen_68" android:layout_height="wrap_content" android:text="总计:" android:layout_centerVertical="true" />
+                        <TextView android:textSize="@dimen/textsize_14" android:textColor="#fff2572d" android:id="@id/tv_totalBeans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2000豆" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+                    <Button android:textSize="@dimen/textsize_19" android:textColor="@color/white" android:id="@id/btn_confirm_order" android:background="@drawable/bg_btn" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_margin="@dimen/dimen_10" android:text="确定兑换 " />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_address_select" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center_vertical" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35">
+                <Button android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/btn_cancel" android:background="@null" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="取消" />
+                <Button android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:id="@id/btn_ok" android:background="@null" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="确定" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/color_333333" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <kankan.wheel.widget.WheelView android:id="@id/id_province" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <kankan.wheel.widget.WheelView android:id="@id/id_city" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <kankan.wheel.widget.WheelView android:id="@id/id_district" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

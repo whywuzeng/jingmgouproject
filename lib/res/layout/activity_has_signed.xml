@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_has_signed" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_top" layout="@layout/base_header" />
+    <RelativeLayout android:id="@id/layout_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_below="@id/layout_top">
+        <ImageView android:id="@id/img_house" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_house" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginRight="40.0dip" android:src="@drawable/ic_has_signed" android:layout_alignRight="@id/img_house" />
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="217.0dip" android:layout_height="53.0dip" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/img_logo" android:layout_width="70.0dip" android:layout_height="35.0dip" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/tv_shop_address" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:maxLines="2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/img_house" android:layout_alignLeft="@id/img_house">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您今天已经签到过了" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="赚取了100精明豆" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="明天再来噢！" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_other_shop" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="35.0dip" android:text="查看其他可以签到的商店 >" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_flashlight" android:scaleType="fitXY" android:layout_below="@id/layout_top" android:layout_centerHorizontal="true" />
+</RelativeLayout>

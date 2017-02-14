@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/under" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15">
+        <TextView android:textSize="@dimen/font_large" android:textColor="@color/gray_black" android:gravity="center" android:id="@id/msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_333333" android:gravity="left" android:id="@id/tv_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+        <View android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" android:layout_marginTop="@dimen/dimen_10" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3">
+            <Button android:textSize="@dimen/font_normal" android:textColor="@color/gray_2" android:id="@id/btn_cancel" android:background="@null" android:padding="@dimen/spacing_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+            <ImageView android:layout_width="@dimen/dimen_line" android:layout_height="fill_parent" android:src="@drawable/line_v" android:scaleType="fitXY" />
+            <Button android:textSize="@dimen/font_normal" android:textColor="@color/blue" android:id="@id/btn_confirm" android:background="@null" android:padding="@dimen/spacing_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="确定" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

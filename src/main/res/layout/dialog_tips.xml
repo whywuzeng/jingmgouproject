@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/under" android:layout_width="fill_parent" android:layout_height="@dimen/pop_height" android:layout_marginLeft="@dimen/spacing_normal" android:layout_marginRight="@dimen/spacing_normal">
+        <TextView android:textSize="@dimen/font_large" android:textColor="@color/gray_black" android:gravity="center" android:id="@id/dialogMessage" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="您确定要删除该商品收藏吗？" android:layout_weight="2.0" />
+        <include layout="@layout/gap_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.7">
+            <Button android:textColor="@color/gray_2" android:id="@id/btn_cancel" android:background="@null" android:padding="@dimen/spacing_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+            <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/line_v" android:scaleType="fitXY" />
+            <Button android:textColor="@color/blue" android:id="@id/btn_confirm" android:background="@null" android:padding="@dimen/spacing_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="确定" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

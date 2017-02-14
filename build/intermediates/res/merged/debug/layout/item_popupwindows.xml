@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_popup" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <Button android:textSize="18.0sp" android:textColor="#ff585858" android:id="@id/item_popupwindows_camera" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="拍照" />
+        </LinearLayout>
+        <TextView android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <Button android:textSize="18.0sp" android:textColor="#ff585858" android:id="@id/item_popupwindows_Photo" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="从相册中选取" />
+        </LinearLayout>
+        <TextView android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1" />
+        <Button android:textSize="18.0sp" android:textColor="#ff585858" android:id="@id/item_popupwindows_cancel" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="取消" />
+    </LinearLayout>
+</RelativeLayout>

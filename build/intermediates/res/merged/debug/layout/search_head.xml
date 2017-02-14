@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/color_f2572d" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_location" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_19" android:layout_marginRight="@dimen/dimen_6" android:maxEms="5" android:singleLine="true" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_back" android:padding="@dimen/spacing_small" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_search" android:background="@drawable/bai_1" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:layout_weight="1.0" android:onClick="intentToSearchPage">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:src="@drawable/ic_search" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_99ffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_key" android:paddingLeft="@dimen/dimen_7" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="搜索商店或商品" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/imgv_msg" android:layout_width="51.0dip" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imgv_msg1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_message" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/img_new_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_new_msg" android:layout_alignTop="@id/imgv_msg1" android:layout_alignRight="@id/imgv_msg1" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imgv_screen" android:visibility="gone" android:layout_width="51.0dip" android:layout_height="wrap_content" android:src="@drawable/screening_filter" />
+</LinearLayout>

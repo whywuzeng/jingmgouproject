@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <ImageView android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:src="@drawable/fb_header" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15" android:text="您的意见对我们很重要，我们会把更好的体验带给您！" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="@color/gray_white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <android.support.v4.widget.SwipeRefreshLayout android:id="@id/fb_reply_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:scrollbarSize="1.0dip" android:id="@id/fb_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/gray_white" android:dividerHeight="@dimen/dimen_line" android:scrollbarDefaultDelayBeforeFade="300" android:overScrollMode="never" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/tv_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂无反馈信息" />
+        </LinearLayout>
+        <View android:background="@color/gray_white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_40">
+            <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:id="@id/et_qq" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="您的联系QQ" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" />
+            <View android:background="@color/gray_white" android:layout_width="@dimen/dimen_line" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_5" android:layout_marginBottom="@dimen/dimen_5" />
+            <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:id="@id/et_phone" android:background="@null" android:paddingLeft="@dimen/dimen_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_10" android:hint="您的手机号码" android:singleLine="true" android:maxLength="11" android:layout_weight="1.0" android:inputType="phone" />
+        </LinearLayout>
+        <View android:background="@color/gray_white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <EditText android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:gravity="left" android:id="@id/et_feedback" android:background="@drawable/bg_feedback" android:paddingLeft="@dimen/dimen_10" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="@dimen/dimen_10" android:hint="请输入您的反馈意见（300字以内）" android:maxLength="300" />
+        <Button android:textSize="@dimen/textsize_17" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_confirm" android:background="@drawable/bg_btn" android:layout_width="@dimen/dimen_187" android:layout_height="@dimen/dimen_45" android:text="发送反馈" />
+    </LinearLayout>
+</LinearLayout>

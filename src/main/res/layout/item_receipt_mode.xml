@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ismartgo.app.grid.CircleImageView android:id="@id/img_receipt_mode" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/default_modify_receipt" app:border_width="0.0dip" app:border_color="@color/color_e7e7e7" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <TextView android:textSize="@dimen/dimen_12" android:textColor="@color/color_666666" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="超市" />
+</LinearLayout>

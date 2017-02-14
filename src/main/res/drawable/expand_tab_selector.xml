@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:Android="http://schemas.android.com/apk/res/android">
+    <item Android:state_pressed="true" Android:drawable="@drawable/pro_toggle_item" />
+    <item Android:state_checked="true" Android:drawable="@drawable/pro_toggle_item_select" />
+    <item Android:drawable="@drawable/pro_toggle_item" />
+</selector>

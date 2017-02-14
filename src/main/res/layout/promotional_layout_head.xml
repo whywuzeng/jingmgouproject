@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_inshop_title" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_93">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_logo" android:background="@drawable/head_portrait_circle_bg" android:padding="3.0dip" android:layout_width="@dimen/dimen_68" android:layout_height="@dimen/dimen_68" android:layout_marginLeft="@dimen/dimen_10">
+            <ImageView android:id="@id/store_logo_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_11" android:layout_marginRight="@dimen/dimen_13" android:layout_weight="2.0">
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/store_name_index" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="广州天河城地负一层屈臣氏我是一个中国人" android:singleLine="true" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/store_address_index" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="广州天河城地负一层屈臣氏我是一个中国人" android:singleLine="true" />
+            <TextView android:textSize="@dimen/font_bettersmall" android:textColor="@color/littleblue" android:gravity="center_vertical" android:id="@id/store_distance_index" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="20.3km" android:drawableLeft="@drawable/map" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/disivion_line" android:background="@color/line_color" android:layout_width="@dimen/dimen_line" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/inSign_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/imgbtn_signIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sign_in" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_666666" android:id="@id/txt_signIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="到店签到" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

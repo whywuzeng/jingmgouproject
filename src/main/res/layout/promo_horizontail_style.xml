@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/pro_merchandise" android:background="@drawable/line_border_corner" android:layout_width="0.0dip" android:layout_height="140.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.ismartgo.app.ownself.view.FilletImageView android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent" app:roundWidth="@dimen/dimen_5" app:roundHeight="@dimen/dimen_5"
+              xmlns:app="http://schemas.android.com/apk/res/com.ismartgo.apppub" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/store_product_pic_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="top|left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.ismartgo.app.ownself.view.FilletImageView android:id="@id/mer_scan_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_qr_code" app:roundWidth="3.0dip" app:roundHeight="3.0dip"
+                      xmlns:app="http://schemas.android.com/apk/res/com.ismartgo.apppub" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_validity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_13">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clock" />
+                    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:text="10月10日前有效" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <View android:background="@drawable/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_25">
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:id="@id/mer_time_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:text="10月10日前有效" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35">
+            <ImageView android:layout_gravity="center" android:id="@id/mer_collect_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/colleation_01" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_2" />
+            <ImageView android:layout_gravity="center" android:id="@id/mer_share_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/share" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="10.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pro_merchandise_second" android:background="@drawable/line_border_corner" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_144" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+            <com.ismartgo.app.ownself.view.FilletImageView android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent" app:roundWidth="@dimen/dimen_5" app:roundHeight="@dimen/dimen_5"
+              xmlns:app="http://schemas.android.com/apk/res/com.ismartgo.apppub" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/store_product_pic_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="top|left|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.ismartgo.app.ownself.view.FilletImageView android:id="@id/mer_scan_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_qr_code" app:roundWidth="3.0dip" app:roundHeight="3.0dip"
+                      xmlns:app="http://schemas.android.com/apk/res/com.ismartgo.apppub" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_validity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_13">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clock" />
+                    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:text="10月10日前有效" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <View android:background="@drawable/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_25">
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:id="@id/mer_time_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:text="10月10日前有效" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35">
+            <ImageView android:layout_gravity="center" android:id="@id/mer_collect_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/colleation_01" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_2" />
+            <ImageView android:layout_gravity="center" android:id="@id/mer_share_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/share" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

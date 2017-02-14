@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/color_f2572d" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/pv_back" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/pv_search" android:background="@drawable/bai_1" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="intentToSearchPage">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/white" android:textColorHint="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/pv_input" android:background="@null" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/item_width_tiny" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="搜索商店或商品" android:singleLine="true" android:drawableLeft="@drawable/ic_search" android:drawablePadding="@dimen/dimen_7" android:imeOptions="actionDone" android:imeActionLabel="确定" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/pv_screening" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/screening_filter" />
+</LinearLayout>

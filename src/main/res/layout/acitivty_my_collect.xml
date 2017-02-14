@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pv="http://schemas.android.com/apk/res/com.ismartgo.apppub">
+    <include layout="@layout/base_header" />
+    <me.maxwin.view.XListViewRefresh android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" pv:plaColumnPaddingLeft="10.0dip" pv:plaColumnPaddingRight="10.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/load_nothing_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_no_collecte" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ff9f9f9f" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_data" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="亲，您还没有收藏的商品哦~" />
+    </LinearLayout>
+</LinearLayout>

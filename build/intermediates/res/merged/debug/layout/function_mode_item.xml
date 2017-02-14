@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_head_img" android:clickable="false" android:layout_width="@dimen/dimen_45" android:layout_height="@dimen/dimen_45" android:src="@drawable/default_head_icon" />
+    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_666666" android:id="@id/tv_head_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:text="到店签到" />
+</LinearLayout>

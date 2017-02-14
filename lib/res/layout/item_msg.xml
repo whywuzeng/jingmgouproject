@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_75" android:minHeight="@dimen/dimen_75"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_msg_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_12" android:src="@drawable/msg_new" />
+    <View android:background="@color/color_e7e7e7" android:layout_width="@dimen/dimen_line" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_15" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅电饭锅" android:maxLines="2" />
+        <TextView android:textSize="@dimen/textsize_11" android:textStyle="bold" android:textColor="@color/color_cccccc" android:layout_gravity="right" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_1" android:text="15-05-12 15:30" />
+    </LinearLayout>
+</LinearLayout>

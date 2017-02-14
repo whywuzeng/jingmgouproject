@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_mine" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_120"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ismartgo.app.grid.CircleImageView android:layout_width="@dimen/dimen_head_icon" android:layout_height="@dimen/dimen_head_icon" android:layout_marginLeft="@dimen/dimen_14" android:src="@drawable/icon_default_avatar1" app:border_width="3.0dip" app:border_color="@color/color_fbaa7d" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_login" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_25" android:layout_weight="1.0">
+        <Button android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:id="@id/btn_login" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录  / 注册" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5">
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页注册，即送" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_fffa7d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500精明豆" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_15" android:src="@drawable/icon_more01" />
+</LinearLayout>

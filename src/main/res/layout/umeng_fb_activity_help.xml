@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/umeng_fb_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.umeng.fb.widget.PagerSlidingTabStrip android:id="@id/umeng_fb_help_tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/umeng_fb_help_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/umeng_fb_help_tabs" />
+</RelativeLayout>

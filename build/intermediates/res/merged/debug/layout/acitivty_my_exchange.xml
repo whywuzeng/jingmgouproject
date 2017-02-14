@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <com.ismartgo.app.ownself.view.AbPullToRefreshView android:id="@id/mPullRefreshView" android:background="@color/gray_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListView android:id="@id/lv_my_exchange" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10" android:cacheColorHint="@color/transparent" android:divider="@color/color_e7e7e7" android:dividerHeight="@dimen/dimen_10" />
+    </com.ismartgo.app.ownself.view.AbPullToRefreshView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/load_nothing_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_no_exchange" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ff9f9f9f" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_data" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="亲，您还没有兑换过礼品哦~" />
+    </LinearLayout>
+</LinearLayout>

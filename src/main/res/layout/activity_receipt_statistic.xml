@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_mine" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_120">
+        <ImageView android:id="@id/iv_receipt_back2" android:paddingLeft="@dimen/dimen_20" android:paddingTop="@dimen/dimen_18" android:paddingRight="@dimen/dimen_20" android:paddingBottom="@dimen/dimen_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back_1" />
+        <TextView android:textSize="@dimen/textsize_17" android:textColor="#ffffffff" android:id="@id/tv01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_13" android:text="小票统计" android:layout_centerHorizontal="true" />
+        <com.ismartgo.app.grid.view.UGallery android:id="@id/gallery_receipt_date" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_40" android:layout_below="@id/tv01" />
+        <ImageView android:id="@id/iv_triangle_Indicator" android:background="@drawable/bg_total" android:layout_width="@dimen/dimen_25" android:layout_height="@dimen/dimen_13" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/lv_receipt_statistic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/trans" android:divider="@color/color_dddddd" android:dividerHeight="@dimen/dimen_line" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="@dimen/dimen_70" android:layout_height="@dimen/dimen_68" android:layout_marginTop="@dimen/dimen_93" android:src="@drawable/bg_empty" />
+        <TextView android:textSize="@dimen/textsize_15" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_23" android:text="该月没有小票统计数据~" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/waterfull_layout" android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tv_noMore" android:background="@color/gray_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="21.0dip">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ff9f9f9f" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_noMore_txt" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="没有数据..." />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.ismartgo.app.ownself.view.InnerScrollView android:id="@id/newsScrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="2.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/nothing_layout" android:background="@color/gray_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ProgressBar android:layout_marginRight="10.0dip" style="@style/customProgressBar" />
+                <TextView android:textColor="#ff9f9f9f" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/loading" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_get_data" android:background="@color/gray_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="21.0dip">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ProgressBar android:layout_marginRight="10.0dip" style="@style/customProgressBar" />
+                <TextView android:textColor="#ff9f9f9f" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/loading" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.ismartgo.app.waterfall.views.InfosListLayout android:id="@id/newsLeftLayout" android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/gray_background" android:gravity="center_horizontal" android:id="@id/newsLoadMore" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/newsButtonPro" android:background="@color/gray_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/loading" android:layout_marginRight="10.0dip" style="@style/customProgressBar" />
+                <TextView android:textColor="#ff9f9f9f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ismartgo.app.ownself.view.InnerScrollView>
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ismartgo.apppub" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <permission android:name="com.ismartgo.apppub.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ismartgo.apppub.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.ismartgo.app.application.AndroidApplication" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="cn.sharesdk.framework.ShareSDKUIShell" android:noHistory="true" android:screenOrientation="unspecified" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data android:name="AuthorizeAdapter" android:value="cn.sharesdk.onekeyshare.MyAdapter"/>
+        </activity>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="@string/BAIDUMAP_APPKEY"/>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"/>
+        <activity android:name="com.ismartgo.app.activity.WelcomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ismartgo.app.activity.GuideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:launchMode="singleTask" android:name="com.ismartgo.app.activity.Tab_Container_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MyTabActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.EarnBeansActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MineActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.TwoDimensionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.ismartgo.app.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.LogcatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ResetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ModifyPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ModifyPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.UserArgeementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MyDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.RewardExchangeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.RewardExchangeMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.OrderFillActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.address.ProvinceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MyBeansActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.InviteFriendsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MyExchangeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MyExchangeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ismartgo.app.activity.MyCollectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MyConsumptionCouponActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ConsumptionCouponDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MsgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.SetEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.SetVerifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.map.BaiduMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.PromotionActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ismartgo.app.activity.SearchForPromotionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ScreenBrandActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MerChandiseDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ScanBarcodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ismartgo.app.activity.CaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.IntoStoreSignInActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.SignInActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.SignInActivity2" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.HasSignedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ContactUsActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ismartgo.app.activity.ScanStoreGoodsActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.ismartgo.app.activity.NotNetworkConnectedActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ismartgo.app.activity.ScanInStoreGoodsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ShakeSignActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ScanGoodsDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MessageDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.SearchStorePromotionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.SetUsuallyAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.TestActivity"/>
+        <activity android:name="com.ismartgo.app.activity.UploadReceiptActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ismartgo.app.activity.UMengFbActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.umeng.fb.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ShootReceiptActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.UploadReceiptActivityRetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ismartgo.app.activity.SelectPicActivity" android:screenOrientation="portrait" android:theme="@style/DialogStyleBottom"/>
+        <activity android:name="com.ismartgo.app.activity.UsuallyQuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.LogisticsDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.ModifyReceiptActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.CameraActivity1" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.PictureActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ismartgo.app.activity.MyReceiptListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ismartgo.app.activity.MyReceiptStatisticActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ismartgo.apppub.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mob.tools.MobUIShell" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.sharesdk.sina.weibo.SinaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.ismartgo.app.service.IbeaconService"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.ismartgo.apppub"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.ismartgo.app.jpush.JPushActivity"/>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.DownloadService"/>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.ismartgo.apppub"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:enabled="true" android:name="com.ismartgo.app.jpush.JPushReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.ismartgo.apppub"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="@string/JPUSH_APPKEY"/>
+        <activity android:name="com.umeng.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.umeng.fb.ConversationActivity"/>
+        <service android:name="com.umeng.update.net.DownloadingService" android:process=":DownloadingService"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="@string/UMENG_APPKEY"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="app360"/>
+        <meta-data android:name="ServerAddress" android:value="10.1.29.208:8080"/>
+        <meta-data android:name="EndPoint" android:value="oss-cn-shenzhen.aliyuncs.com"/>
+        <meta-data android:name="BucketName" android:value="sgreceipt"/>
+        <activity android:launchMode="standard" android:name="com.ismartgo.beacon.view.IbeaconWebActivity" android:theme="@android:style/Theme.Dialog"/>
+        <receiver android:name="com.ismartgo.app.receiver.BluetoothStatusReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="SMARTGO_APPKEY" android:value="E2C56DB5-DFFB-48D2-B060-D0F5A71096E1"/>
+    </application>
+</manifest>

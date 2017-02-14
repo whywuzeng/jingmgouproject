@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/umeng_fb_lightblue" android:layout_width="6.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/umeng_fb_item_height">
+        <TextView android:textSize="@dimen/umeng_fb_item_content_size" android:gravity="center_vertical" android:id="@id/umeng_fb_welcome_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:text="@string/umeng_fb_reply_content_default" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" />
+        <View android:background="@color/umeng_fb_line" android:layout_width="fill_parent" android:layout_height="@dimen/umeng_fb_item_line_height" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

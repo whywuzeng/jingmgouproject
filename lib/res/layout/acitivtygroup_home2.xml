@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_root" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ismartgo.app.grid.SmartStraggeredGridView android:id="@id/grid_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:column_count="@integer/grid_column_count" app:item_margin="10.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <TextView android:textColor="@color/gray_black" android:gravity="center" android:id="@id/tv_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/xlistview_footer_hint_normal" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/abc" android:background="@color/color_f2572d" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44">
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_new_location" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_19" android:layout_marginRight="@dimen/dimen_6" android:maxEms="5" android:singleLine="true" />
+        <ImageView android:layout_gravity="center_vertical" android:padding="@dimen/spacing_small" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_new_search" android:background="@drawable/bai_1" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:layout_weight="1.0" android:onClick="intentToSearchPage">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:src="@drawable/ic_search" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_99ffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/dimen_7" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="搜索商店或商品" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/imgv_new_msg" android:layout_width="51.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/img_msg" android:layout_width="@dimen/dimen_25" android:layout_height="@dimen/dimen_25" android:src="@drawable/ic_message" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/img_new_msg01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_new_msg" android:layout_alignTop="@id/img_msg" android:layout_alignRight="@id/img_msg" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imgv_screen" android:visibility="gone" android:layout_width="51.0dip" android:layout_height="wrap_content" android:src="@drawable/screening_filter" />
+    </LinearLayout>
+</RelativeLayout>

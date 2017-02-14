@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/capture_containter" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/capture_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/top_mask" android:background="@drawable/scan_mask" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:id="@id/capture_crop_layout" android:background="@drawable/capture" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_below="@id/top_mask" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name">
+        <ImageView android:id="@id/capture_scan_line" android:background="@drawable/scan_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <ImageView android:id="@id/bottom_mask" android:background="@drawable/scan_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/capture_crop_layout" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/left_mask" android:background="@drawable/scan_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/capture_crop_layout" android:layout_above="@id/bottom_mask" android:layout_below="@id/top_mask" android:layout_alignParentLeft="true" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/right_mask" android:background="@drawable/scan_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/capture_crop_layout" android:layout_above="@id/bottom_mask" android:layout_below="@id/top_mask" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/scan_tips" android:layout_below="@id/capture_crop_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

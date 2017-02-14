@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_15">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15">
+                <ImageView android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:src="@drawable/push" />
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15" android:text="推送设置" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/cb_push_settings" android:background="@drawable/switch_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:checked="true" android:button="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15">
+                <ImageView android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:src="@drawable/voice" />
+                <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15" android:text="声音开关" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/cb_voice_settings" android:background="@drawable/switch_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:checked="true" android:button="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15">
+            <ImageView android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:src="@drawable/clear_cache" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/tv_clear_cache" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15" android:text="清除缓存" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/tv_cache" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_45" android:layout_marginRight="@dimen/dimen_15" android:drawableRight="@drawable/arrow_right_black" />
+        </LinearLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+        <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45">
+            <ImageView android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:src="@drawable/about" />
+            <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/tv_about" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15" android:text="关于" android:drawableRight="@drawable/arrow_right_black" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:id="@id/btn_logout" android:background="@drawable/bg_btn_logout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15" android:layout_marginBottom="@dimen/dimen_15" android:text="退出登录" />
+</LinearLayout>

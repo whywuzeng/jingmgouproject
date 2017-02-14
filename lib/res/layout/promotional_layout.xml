@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pv="http://schemas.android.com/apk/res/com.ismartgo.apppub">
+    <include android:id="@id/base_layout" layout="@layout/search_head" />
+    <com.ismartgo.app.ownself.view.ExpandTabView android:id="@id/expandtab_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="hello" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pro_display_info_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/not_in_shop_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ismartgo.pulltorefreshlistview.view.RefreshListView android:id="@id/promotion_addstore_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/current_in_shop_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/scan_more_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <me.maxwin.view.XListView android:id="@id/list_shop" android:background="@color/gray_background" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" pv:plaColumnPaddingLeft="10.0dip" pv:plaColumnPaddingRight="10.0dip" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="#ff9f9f9f" android:gravity="center" android:id="@id/tv_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/content_null" android:drawableTop="@drawable/cry" android:drawablePadding="@dimen/dimen_5" />
+            </LinearLayout>
+        </LinearLayout>
+        <me.maxwin.view.XListViewRefresh android:id="@id/list" android:background="@color/gray_background" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" pv:plaColumnPaddingLeft="10.0dip" pv:plaColumnPaddingRight="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/search_empty" android:background="@color/gray_white" android:paddingBottom="80.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cry" />
+        <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray" android:gravity="center" android:id="@id/enpty_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:text="@string/content_null" />
+    </LinearLayout>
+</LinearLayout>

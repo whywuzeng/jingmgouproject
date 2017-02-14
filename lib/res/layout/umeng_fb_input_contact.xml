@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/umeng_fb_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/umeng_fb_reply_item_view_tag" android:background="@color/umeng_fb_gray" android:layout_width="6.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/umeng_fb_reply_item_view_line" android:background="@color/umeng_fb_line" android:layout_width="fill_parent" android:layout_height="@dimen/umeng_fb_item_line_height" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:gravity="center" android:id="@id/umeng_fb_contact_spinner" android:paddingLeft="@dimen/umeng_fb_spinner_padding_left" android:paddingRight="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <Button android:textSize="@dimen/umeng_fb_item_content_size" android:textColor="@color/umeng_fb_secondary_text_light" android:gravity="center" android:id="@id/umeng_fb_send_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/umeng_fb_contact_save" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="@dimen/umeng_fb_item_content_size" android:gravity="center_vertical" android:id="@id/umeng_fb_send_content" android:background="@null" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:hint="@string/umeng_fb_contact_info" android:layout_toLeftOf="@id/umeng_fb_send_btn" android:layout_toRightOf="@id/umeng_fb_contact_spinner" android:inputType="textCapSentences|textMultiLine" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

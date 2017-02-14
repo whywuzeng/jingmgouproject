@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:paddingBottom="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_204"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44">
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="礼品兑换" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@id/tv_more_gifts" android:paddingLeft="@dimen/dimen_10" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="更多" android:drawableRight="@drawable/arrow_right_black" android:drawablePadding="@dimen/dimen_4" />
+    </LinearLayout>
+    <include layout="@layout/item_two_reward_exchange" />
+</LinearLayout>

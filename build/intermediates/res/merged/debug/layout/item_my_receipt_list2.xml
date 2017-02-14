@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_layout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <View android:background="@color/color_dddddd" android:layout_width="@dimen/dimen_1" android:layout_height="@dimen/dimen_20" />
+        <ImageView android:id="@id/iv_receipt_type" android:layout_width="@dimen/dimen_8" android:layout_height="@dimen/dimen_8" android:src="@drawable/icon_date_1" />
+        <View android:background="@color/color_dddddd" android:layout_width="@dimen/dimen_1" android:layout_height="@dimen/dimen_20" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:id="@id/tv_receipt_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="日期" android:layout_toLeftOf="@id/ll_layout1" android:layout_centerVertical="true" />
+    <Button android:id="@id/btn_lottery" android:background="@drawable/lottery" android:visibility="gone" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_17" android:layout_marginRight="@dimen/dimen_10" android:layout_toLeftOf="@id/tv_receipt_date" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:id="@id/tv_total_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="10.00" android:layout_toRightOf="@id/ll_layout1" android:layout_centerVertical="true" />
+</RelativeLayout>

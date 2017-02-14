@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/umeng_fb_audio_dialog_layout" android:background="#f4404040" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true">
+        <View android:id="@id/umeng_fb_audio_dialog_count_down_tv" android:background="@drawable/umeng_fb_audio_dialog_content" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="72.0sp" android:textColor="@color/umeng_fb_white" android:gravity="center" android:id="@id/umeng_fb_audio_dialog_count_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_below="@id/umeng_fb_audio_dialog_count_down_tv" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/umeng_fb_white" android:id="@id/umeng_fb_audio_dialog_count_down_tag_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/umeng_fb_slide_up_cancel" android:layout_below="@id/umeng_fb_audio_dialog_count_tv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

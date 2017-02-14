@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.wyy.twodimcode.view.ViewfinderView android:id="@id/viewfinder_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10">
+            <EditText android:textSize="15.0sp" android:textColor="@color/black" android:textColorHint="@color/color_cccccc" android:gravity="center" android:id="@id/et_code" android:background="@drawable/bg_input_qrcode" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:hint="扫描不到？点这里手动输入条码" android:singleLine="true" android:imeOptions="actionGo" />
+        </LinearLayout>
+    </FrameLayout>
+    <include android:id="@id/screen" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44" layout="@layout/screening_propage_head" />
+    <ImageView android:id="@id/img_splash_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_68" android:layout_marginRight="@dimen/dimen_25" android:src="@drawable/btn_flashlight_off" android:layout_alignParentRight="true" />
+</RelativeLayout>

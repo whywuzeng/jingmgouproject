@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/umeng_fb_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/umeng_fb_reply_item_view_tag" android:background="@color/umeng_fb_gray" android:layout_width="6.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/umeng_fb_reply_item_view_line" android:background="@color/umeng_fb_line" android:layout_width="fill_parent" android:layout_height="@dimen/umeng_fb_item_line_height" />
+        <RelativeLayout android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/umeng_fb_record_tag_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/umeng_fb_record" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <FrameLayout android:id="@id/umeng_fb_send_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageButton android:gravity="center" android:id="@id/umeng_fb_plus_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/umeng_fb_plus" />
+                <Button android:textColor="@android:color/black" android:gravity="center" android:id="@id/umeng_fb_send_btn" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/umeng_fb_send" />
+            </FrameLayout>
+            <EditText android:textSize="@dimen/umeng_fb_item_content_size" android:id="@id/umeng_fb_send_content" android:background="@null" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:hint="@string/umeng_fb_feedback" android:layout_toLeftOf="@id/umeng_fb_send_layout" android:layout_toRightOf="@id/umeng_fb_record_tag_btn" android:layout_centerVertical="true" android:inputType="textCapSentences|textMultiLine" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/umeng_fb_send_layout" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

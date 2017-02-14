@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_60"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@id/tv_nickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_50" android:text="米修米修" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:id="@id/tv_days" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:text="7天前" android:singleLine="true" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:id="@id/tv_status" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:text="已发豆" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:layout_below="@id/layout_top">
+        <LinearLayout android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_50">
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已邀" android:singleLine="true" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_f2572d" android:id="@id/tv_invite_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:singleLine="true" />
+            <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_f2572d" android:id="@id/tv_invite_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="+360" android:singleLine="true" />
+        <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="豆" android:singleLine="true" />
+    </LinearLayout>
+    <com.ismartgo.app.grid.CircleImageView android:id="@id/img_logopath" android:layout_width="@dimen/dimen_35" android:layout_height="@dimen/dimen_35" android:src="@drawable/ic_launcher" app:border_width="1.0dip" app:border_color="@color/color_e7e7e7" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:padding="@dimen/dimen_15" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_total_money" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:src="@drawable/icon_total" />
+    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_655957" android:id="@id/tv_total_name" android:layout_width="58.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10" android:text="总计" />
+    <ProgressBar android:id="@id/lp_money_procent" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="@dimen/dimen_4" android:layout_weight="1.0" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_655957" android:id="@id/tv_type_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10" android:text="123445" />
+</LinearLayout>

@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="umeng_fb_contact_key_array">
+        <item>@string/umeng_fb_contact_key_email</item>
+        <item>@string/umeng_fb_contact_key_qq</item>
+        <item>@string/umeng_fb_contact_key_phone</item>
+        <item>@string/umeng_fb_contact_key_other</item>
+    </string-array>
+    <string-array name="umeng_fb_contact_type_array">
+        <item>@string/umeng_fb_contact_email</item>
+        <item>@string/umeng_fb_contact_qq</item>
+        <item>@string/umeng_fb_contact_phone</item>
+        <item>@string/umeng_fb_contact_other</item>
+    </string-array>
+    <string-array name="umeng_fb_tabs_title">
+        <item>Feedback</item>
+        <item>FAQ</item>
+    </string-array>
+    <attr format="reference" name="absListViewStyle"/>
+    <attr format="integer" name="accessibilityFocusable">
+        <enum name="auto" value="0"/>
+        <enum name="no" value="2"/>
+        <enum name="yes" value="1"/>
+    </attr>
+    <attr format="color" name="activeColor"/>
+    <attr format="dimension" name="activeRadius"/>
+    <attr name="activeType">
+        <flag name="fill" value="0x00000001"/>
+        <flag name="stroke" value="0x00000000"/>
+    </attr>
+    <attr format="boolean" name="addStatesFromChildren"/>
+    <attr format="reference|color" name="ahp_backgroundColor"/>
+    <attr format="reference|color" name="ahp_progressColor"/>
+    <attr format="float" name="alpha"/>
+    <attr format="boolean" name="alwaysDrawnWithCache"/>
+    <attr format="integer" name="animat_id"/>
+    <attr format="boolean" name="animateLayoutChanges"/>
+    <attr format="boolean" name="animationCache"/>
+    <attr format="color" name="background_color"/>
+    <attr format="dimension" name="background_stroke_width"/>
+    <attr format="color" name="border_color"/>
+    <attr format="color" name="border_inside_color"/>
+    <attr format="color" name="border_outside_color"/>
+    <attr format="dimension" name="border_thickness"/>
+    <attr format="dimension" name="border_width"/>
+    <attr format="color" name="cacheColorHint"/>
+    <attr format="boolean" name="centered"/>
+    <attr name="choiceMode">
+        <enum name="none" value="0"/>
+        <enum name="multipleChoice" value="2"/>
+        <enum name="multipleChoiceModal" value="3"/>
+        <enum name="singleChoice" value="1"/>
+    </attr>
+    <attr format="dimension" name="circleSeparation"/>
+    <attr format="boolean" name="clickable"/>
+    <attr format="boolean" name="clipChildren"/>
+    <attr format="boolean" name="clipToPadding"/>
+    <attr format="integer" name="column_count"/>
+    <attr format="integer" name="column_count_landscape"/>
+    <attr format="integer" name="column_count_portrait"/>
+    <attr format="string" localization="suggested" name="contentDescription"/>
+    <attr format="reference" name="contentView"/>
+    <attr name="descendantFocusability">
+        <enum name="afterDescendants" value="1"/>
+        <enum name="beforeDescendants" value="0"/>
+        <enum name="blocksDescendants" value="2"/>
+    </attr>
+    <attr format="dimension" name="dividerHeight"/>
+    <attr format="boolean" name="drawSelectorOnTop"/>
+    <attr name="drawingCacheQuality">
+        <enum name="auto" value="0"/>
+        <enum name="high" value="2"/>
+        <enum name="low" value="1"/>
+    </attr>
+    <attr format="boolean" name="duplicateParentState"/>
+    <attr format="integer" name="fadeOut"/>
+    <attr format="boolean" name="fadeScrollbars"/>
+    <attr name="fadingEdge">
+        <flag name="horizontal" value="0x00001000"/>
+        <flag name="none" value="0x00000000"/>
+        <flag name="vertical" value="0x00002000"/>
+    </attr>
+    <attr format="dimension" name="fadingEdgeLength"/>
+    <attr format="boolean" name="fastScrollAlwaysVisible"/>
+    <attr format="boolean" name="fastScrollEnabled"/>
+    <attr format="boolean" name="filterTouchesWhenObscured"/>
+    <attr format="boolean" name="fitsSystemWindows"/>
+    <attr format="integer" name="focus_fail_id"/>
+    <attr format="integer" name="focus_focusing_id"/>
+    <attr format="integer" name="focus_success_id"/>
+    <attr format="boolean" name="focusable"/>
+    <attr format="boolean" name="focusableInTouchMode"/>
+    <attr format="boolean" name="footerDividersEnabled"/>
+    <attr format="dimension" name="grid_paddingBottom"/>
+    <attr format="dimension" name="grid_paddingLeft"/>
+    <attr format="dimension" name="grid_paddingRight"/>
+    <attr format="dimension" name="grid_paddingTop"/>
+    <attr format="boolean" name="hapticFeedbackEnabled"/>
+    <attr format="boolean" name="headerDividersEnabled"/>
+    <attr format="reference" name="headerView"/>
+    <attr format="reference" name="id"/>
+    <attr format="integer" name="importantForAccessibility">
+        <enum name="auto" value="0"/>
+        <enum name="no" value="2"/>
+        <enum name="yes" value="1"/>
+    </attr>
+    <attr format="color" name="inactiveColor"/>
+    <attr name="inactiveType">
+        <flag name="fill" value="0x00000001"/>
+        <flag name="stroke" value="0x00000000"/>
+    </attr>
+    <attr format="boolean" name="isHeadParallax"/>
+    <attr format="boolean" name="isHeaderParallax"/>
+    <attr format="boolean" name="isScrollContainer"/>
+    <attr format="dimension" name="item_margin"/>
+    <attr format="boolean" name="keepScreenOn"/>
+    <attr name="layerType">
+        <enum name="none" value="0"/>
+        <enum name="hardware" value="2"/>
+        <enum name="software" value="1"/>
+    </attr>
+    <attr format="reference" name="layoutAnimation"/>
+    <attr name="layoutDirection">
+        <enum name="inherit" value="2"/>
+        <enum name="locale" value="3"/>
+        <enum name="ltr" value="0"/>
+        <enum name="rtl" value="1"/>
+    </attr>
+    <attr format="reference" name="listHeadView"/>
+    <attr format="reference|color" name="listSelector"/>
+    <attr format="reference" name="listViewStyle"/>
+    <attr format="boolean" name="longClickable"/>
+    <attr format="dimension" name="minHeight"/>
+    <attr format="dimension" name="minWidth"/>
+    <attr format="reference" name="nextFocusDown"/>
+    <attr format="reference" name="nextFocusForward"/>
+    <attr format="reference" name="nextFocusLeft"/>
+    <attr format="reference" name="nextFocusRight"/>
+    <attr format="reference" name="nextFocusUp"/>
+    <attr format="string" name="onClick"/>
+    <attr format="reference|color" name="overScrollFooter"/>
+    <attr format="reference|color" name="overScrollHeader"/>
+    <attr name="overScrollMode">
+        <enum name="always" value="0"/>
+        <enum name="ifContentScrolls" value="1"/>
+        <enum name="never" value="2"/>
+    </attr>
+    <attr format="dimension" name="padding"/>
+    <attr format="dimension" name="paddingBottom"/>
+    <attr format="dimension" name="paddingEnd"/>
+    <attr format="dimension" name="paddingLeft"/>
+    <attr format="dimension" name="paddingRight"/>
+    <attr format="dimension" name="paddingStart"/>
+    <attr format="dimension" name="paddingTop"/>
+    <attr name="persistentDrawingCache">
+        <flag name="none" value="0x00000000"/>
+        <flag name="all" value="0x00000003"/>
+        <flag name="animation" value="0x00000001"/>
+        <flag name="scrolling" value="0x00000002"/>
+    </attr>
+    <attr format="integer" name="plaColumnNumber"/>
+    <attr format="dimension" name="plaColumnPaddingLeft"/>
+    <attr format="dimension" name="plaColumnPaddingRight"/>
+    <attr format="integer" name="plaLandscapeColumnNumber"/>
+    <attr format="integer" name="progress"/>
+    <attr format="color" name="progress_color"/>
+    <attr format="color" name="pstsDividerColor"/>
+    <attr format="dimension" name="pstsDividerPadding"/>
+    <attr format="color" name="pstsIndicatorColor"/>
+    <attr format="dimension" name="pstsIndicatorHeight"/>
+    <attr format="dimension" name="pstsScrollOffset"/>
+    <attr format="boolean" name="pstsShouldExpand"/>
+    <attr format="reference" name="pstsTabBackground"/>
+    <attr format="dimension" name="pstsTabPaddingLeftRight"/>
+    <attr format="boolean" name="pstsTextAllCaps"/>
+    <attr format="color" name="pstsUnderlineColor"/>
+    <attr format="dimension" name="pstsUnderlineHeight"/>
+    <attr format="dimension" name="radius"/>
+    <attr name="requiresFadingEdge">
+        <flag name="horizontal" value="0x00001000"/>
+        <flag name="none" value="0x00000000"/>
+        <flag name="vertical" value="0x00002000"/>
+    </attr>
+    <attr format="float" name="rotation"/>
+    <attr format="float" name="rotationX"/>
+    <attr format="float" name="rotationY"/>
+    <attr format="dimension" name="roundHeight"/>
+    <attr format="boolean" name="roundLiftDown"/>
+    <attr format="boolean" name="roundLiftUp"/>
+    <attr format="boolean" name="roundRightDown"/>
+    <attr format="boolean" name="roundRightUp"/>
+    <attr format="dimension" name="roundWidth"/>
+    <attr format="boolean" name="saveEnabled"/>
+    <attr format="float" name="scaleX"/>
+    <attr format="float" name="scaleY"/>
+    <attr format="reference" name="scrollContentView"/>
+    <attr format="reference" name="scrollHeadView"/>
+    <attr format="dimension" name="scrollX"/>
+    <attr format="dimension" name="scrollY"/>
+    <attr format="reference" name="scrollZoomView"/>
+    <attr format="boolean" name="scrollbarAlwaysDrawHorizontalTrack"/>
+    <attr format="boolean" name="scrollbarAlwaysDrawVerticalTrack"/>
+    <attr format="integer" name="scrollbarDefaultDelayBeforeFade"/>
+    <attr format="integer" name="scrollbarFadeDuration"/>
+    <attr format="dimension" name="scrollbarSize"/>
+    <attr name="scrollbarStyle">
+        <enum name="insideInset" value="16777216"/>
+        <enum name="insideOverlay" value="0"/>
+        <enum name="outsideInset" value="50331648"/>
+        <enum name="outsideOverlay" value="33554432"/>
+    </attr>
+    <attr format="reference" name="scrollbarThumbHorizontal"/>
+    <attr format="reference" name="scrollbarThumbVertical"/>
+    <attr format="reference" name="scrollbarTrackHorizontal"/>
+    <attr format="reference" name="scrollbarTrackVertical"/>
+    <attr name="scrollbars">
+        <flag name="horizontal" value="0x00000100"/>
+        <flag name="none" value="0x00000000"/>
+        <flag name="vertical" value="0x00000200"/>
+    </attr>
+    <attr format="boolean" name="scrollingCache"/>
+    <attr format="integer" name="sidebuffer"/>
+    <attr format="boolean" name="smoothScrollbar"/>
+    <attr format="boolean" name="soundEffectsEnabled"/>
+    <attr format="boolean" name="splitMotionEvents"/>
+    <attr format="boolean" name="stackFromBottom"/>
+    <attr format="dimension" name="stroke_width"/>
+    <attr format="string" name="tag"/>
+    <attr format="integer" name="textAlignment">
+        <enum name="inherit" value="0"/>
+        <enum name="center" value="4"/>
+        <enum name="gravity" value="1"/>
+        <enum name="textEnd" value="3"/>
+        <enum name="textStart" value="2"/>
+        <enum name="viewEnd" value="6"/>
+        <enum name="viewStart" value="5"/>
+    </attr>
+    <attr format="integer" name="textDirection">
+        <enum name="inherit" value="0"/>
+        <enum name="locale" value="5"/>
+        <enum name="ltr" value="3"/>
+        <enum name="rtl" value="4"/>
+        <enum name="anyRtl" value="2"/>
+        <enum name="firstStrong" value="1"/>
+    </attr>
+    <attr format="boolean" name="textFilterEnabled"/>
+    <attr format="color" name="text_color"/>
+    <attr format="integer" name="text_size"/>
+    <attr name="transcriptMode">
+        <enum name="alwaysScroll" value="2"/>
+        <enum name="disabled" value="0"/>
+        <enum name="normal" value="1"/>
+    </attr>
+    <attr format="dimension" name="transformPivotX"/>
+    <attr format="dimension" name="transformPivotY"/>
+    <attr format="dimension" name="translationX"/>
+    <attr format="dimension" name="translationY"/>
+    <attr name="verticalScrollbarPosition">
+        <enum name="defaultPosition" value="0"/>
+        <enum name="left" value="1"/>
+        <enum name="right" value="2"/>
+    </attr>
+    <attr name="visibility">
+        <enum name="gone" value="2"/>
+        <enum name="invisible" value="1"/>
+        <enum name="visible" value="0"/>
+    </attr>
+    <attr format="reference" name="zoomView"/>
+    <color name="actionsheet_blue">#ff037bff</color>
+    <color name="actionsheet_gray">#ff8f8f8f</color>
+    <color name="actionsheet_red">#fffd4a2e</color>
+    <color name="album_item_bg">#fffcfcfd</color>
+    <color name="alertdialog_line">#ffc6c6c6</color>
+    <color name="backgroud">#ffffffff</color>
+    <color name="background_tab_pressed">#6633b5e5</color>
+    <color name="beige">#fff5f5dc</color>
+    <color name="black">#ff000000</color>
+    <color name="black_2">#ff3f3f3f</color>
+    <color name="black_dark">#ff333333</color>
+    <color name="blue">#ff2d8de3</color>
+    <color name="blue1">#ff0000ff</color>
+    <color name="btn_gray_normal">#ffc0c0c0</color>
+    <color name="choose_eara_item_press_color">#fff4f4f4</color>
+    <color name="colorAccent">#ffff4081</color>
+    <color name="colorPrimary">#ff00bcd4</color>
+    <color name="colorPrimaryDark">#ff0097a7</color>
+    <color name="color_007aff">#ff007aff</color>
+    <color name="color_00cc00">#ff00cc00</color>
+    <color name="color_00f2572d">#00f2572d</color>
+    <color name="color_2b3b50">#ff2b3b50</color>
+    <color name="color_333333">#ff333333</color>
+    <color name="color_655957">#ff655957</color>
+    <color name="color_666666">#ff666666</color>
+    <color name="color_999999">#ff999999</color>
+    <color name="color_99ffffff">#99ffffff</color>
+    <color name="color_cccccc">#ffcccccc</color>
+    <color name="color_dddddd">#ffdddddd</color>
+    <color name="color_e7e7e7">#ffe7e7e7</color>
+    <color name="color_e7f5ff">#ffe7f5ff</color>
+    <color name="color_e8230c">#ffe8230c</color>
+    <color name="color_ebebeb">#ffebebeb</color>
+    <color name="color_ef9279">#ffef9279</color>
+    <color name="color_f2572d">#ffff9030</color>
+    <color name="color_fbaa7d">#fffbaa7d</color>
+    <color name="color_fdfdfd">#fffdfdfd</color>
+    <color name="color_fec081">#fffec081</color>
+    <color name="color_ff7f00">#ffff7f00</color>
+    <color name="color_ff963b">#ffff963b</color>
+    <color name="color_fffa7d">#fffffa7d</color>
+    <color name="color_fffdd7">#fffffdd7</color>
+    <color name="color_guide1_bg">#ffca4f79</color>
+    <color name="color_guide2_bg">#ffd2556a</color>
+    <color name="color_guide3_bg">#ff706aab</color>
+    <color name="common_text_yellow">#ffffe049</color>
+    <color name="common_title_bg">#aa111213</color>
+    <color name="common_title_text">#ff565555</color>
+    <color name="crop_background">#ff737373</color>
+    <color name="crop_background_2">#99737373</color>
+    <color name="darkbg">#fff2f2f2</color>
+    <color name="dialog_bg">#ffe7e7e7</color>
+    <color name="gray">#ffcccccc</color>
+    <color name="gray_2">#ff888888</color>
+    <color name="gray_background">#ffe7e7e7</color>
+    <color name="gray_bg">#fff1f1f1</color>
+    <color name="gray_black">#ff2e2e2e</color>
+    <color name="gray_dark">#ffb3b3b3</color>
+    <color name="gray_light">#ffececec</color>
+    <color name="gray_white">#ffe7e7e7</color>
+    <color name="green">#ff00ff00</color>
+    <color name="grey">#66808080</color>
+    <color name="line_color">#ffd7d7d7</color>
+    <color name="list_divider">#ffd3d3d3</color>
+    <color name="littleblue">#ff0093d0</color>
+    <color name="littlegray">#ff727272</color>
+    <color name="main_menu_bg">#aa111213</color>
+    <color name="no_color">#00000000</color>
+    <color name="orange">#fff2572d</color>
+    <color name="pink">#ffff87ef</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="primary_title_text_color">#ff888888</color>
+    <color name="province_line_border">#ffd0d0d0</color>
+    <color name="red">#ffff0000</color>
+    <color name="result_text">#ff000000</color>
+    <color name="shader">#33000000</color>
+    <color name="tb_munion_item_force">#ffe3e3e3</color>
+    <color name="title_tv_color">#ffffffff</color>
+    <color name="trans">#00000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="umeng_fb_audo_dialog_bg">#f4f0745f</color>
+    <color name="umeng_fb_background">#fff6f6f6</color>
+    <color name="umeng_fb_gray">#ffd8d8d8</color>
+    <color name="umeng_fb_lightblue">#ff0fb0a8</color>
+    <color name="umeng_fb_line">#ffdcdcdc</color>
+    <color name="umeng_fb_secondary_text_light">#8a000000</color>
+    <color name="umeng_fb_tab_bg_pressed">#6633b5e5</color>
+    <color name="umeng_fb_white">#ffffffff</color>
+    <color name="video_playter_bg">#ff333333</color>
+    <color name="viewfinder_frame">#ff4eee94</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#99000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="window_bg">#88838b8b</color>
+    <color name="yellow">#fffffc00</color>
+    <color name="yiban_transparent">#50ffffff</color>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="ad_banner_height">120.0dip</dimen>
+    <dimen name="album_header_bar_height">50.0dip</dimen>
+    <dimen name="album_header_btn_width">48.0dip</dimen>
+    <dimen name="album_rooter_bar_height">48.0dip</dimen>
+    <dimen name="album_rooter_bar_text_size">16.0sp</dimen>
+    <dimen name="angle">5.0dip</dimen>
+    <dimen name="bottomLeftRadius">5.0dip</dimen>
+    <dimen name="bottomRightRadius">5.0dip</dimen>
+    <dimen name="bottom_bar_height">75.0dip</dimen>
+    <dimen name="bottom_height_normal">55.0dip</dimen>
+    <dimen name="button_height_normal">48.0dip</dimen>
+    <dimen name="button_height_small">40.0dip</dimen>
+    <dimen name="button_height_tall">60.0dip</dimen>
+    <dimen name="button_radius">5.0dip</dimen>
+    <dimen name="button_text_size">14.0sp</dimen>
+    <dimen name="button_width_large">60.0dip</dimen>
+    <dimen name="comment_height_normal">56.0dip</dimen>
+    <dimen name="dimen_1">1.0dip</dimen>
+    <dimen name="dimen_10">10.0dip</dimen>
+    <dimen name="dimen_100">100.0dip</dimen>
+    <dimen name="dimen_101">101.0dip</dimen>
+    <dimen name="dimen_109">109.0dip</dimen>
+    <dimen name="dimen_11">11.0dip</dimen>
+    <dimen name="dimen_115">115.0dip</dimen>
+    <dimen name="dimen_117">117.0dip</dimen>
+    <dimen name="dimen_12">12.0dip</dimen>
+    <dimen name="dimen_120">120.0dip</dimen>
+    <dimen name="dimen_126">126.0dip</dimen>
+    <dimen name="dimen_13">13.0dip</dimen>
+    <dimen name="dimen_130">130.0dip</dimen>
+    <dimen name="dimen_14">14.0dip</dimen>
+    <dimen name="dimen_140">140.0dip</dimen>
+    <dimen name="dimen_144">144.0dip</dimen>
+    <dimen name="dimen_15">15.0dip</dimen>
+    <dimen name="dimen_150">150.0dip</dimen>
+    <dimen name="dimen_155">155.0dip</dimen>
+    <dimen name="dimen_163">163.0dip</dimen>
+    <dimen name="dimen_17">17.0dip</dimen>
+    <dimen name="dimen_18">18.0dip</dimen>
+    <dimen name="dimen_180">180.0dip</dimen>
+    <dimen name="dimen_187">187.0dip</dimen>
+    <dimen name="dimen_19">19.0dip</dimen>
+    <dimen name="dimen_2">2.0dip</dimen>
+    <dimen name="dimen_20">20.0dip</dimen>
+    <dimen name="dimen_203">203.0dip</dimen>
+    <dimen name="dimen_204">204.0dip</dimen>
+    <dimen name="dimen_225">225.0dip</dimen>
+    <dimen name="dimen_23">23.0dip</dimen>
+    <dimen name="dimen_24">24.0dip</dimen>
+    <dimen name="dimen_243">243.0dip</dimen>
+    <dimen name="dimen_25">25.0dip</dimen>
+    <dimen name="dimen_29">29.0dip</dimen>
+    <dimen name="dimen_3">3.0dip</dimen>
+    <dimen name="dimen_30">30.0dip</dimen>
+    <dimen name="dimen_31">31.0dip</dimen>
+    <dimen name="dimen_320">320.0dip</dimen>
+    <dimen name="dimen_33">33.0dip</dimen>
+    <dimen name="dimen_35">35.0dip</dimen>
+    <dimen name="dimen_38">38.0dip</dimen>
+    <dimen name="dimen_4">4.0dip</dimen>
+    <dimen name="dimen_40">40.0dip</dimen>
+    <dimen name="dimen_44">44.0dip</dimen>
+    <dimen name="dimen_45">45.0dip</dimen>
+    <dimen name="dimen_49">49.0dip</dimen>
+    <dimen name="dimen_5">5.0dip</dimen>
+    <dimen name="dimen_50">50.0dip</dimen>
+    <dimen name="dimen_52">52.0dip</dimen>
+    <dimen name="dimen_56">56.0dip</dimen>
+    <dimen name="dimen_58">58.0dip</dimen>
+    <dimen name="dimen_6">6.0dip</dimen>
+    <dimen name="dimen_60">60.0dip</dimen>
+    <dimen name="dimen_62">62.0dip</dimen>
+    <dimen name="dimen_64">64.0dip</dimen>
+    <dimen name="dimen_65">65.0dip</dimen>
+    <dimen name="dimen_68">68.0dip</dimen>
+    <dimen name="dimen_7">7.0dip</dimen>
+    <dimen name="dimen_70">70.0dip</dimen>
+    <dimen name="dimen_73">73.0dip</dimen>
+    <dimen name="dimen_75">75.0dip</dimen>
+    <dimen name="dimen_77">77.0dip</dimen>
+    <dimen name="dimen_8">8.0dip</dimen>
+    <dimen name="dimen_80">80.0dip</dimen>
+    <dimen name="dimen_83">83.0dip</dimen>
+    <dimen name="dimen_85">85.0dip</dimen>
+    <dimen name="dimen_9">9.0dip</dimen>
+    <dimen name="dimen_90">90.0dip</dimen>
+    <dimen name="dimen_93">93.0dip</dimen>
+    <dimen name="dimen_ads_banner_height">181.0dip</dimen>
+    <dimen name="dimen_circle_margin">-6.0dip</dimen>
+    <dimen name="dimen_head_icon">60.0dip</dimen>
+    <dimen name="dimen_line">0.5dip</dimen>
+    <dimen name="dimen_logo_height">40.0dip</dimen>
+    <dimen name="dimen_logo_width">80.0dip</dimen>
+    <dimen name="edittext_height_normal">44.0dip</dimen>
+    <dimen name="edittext_height_small">40.0dip</dimen>
+    <dimen name="expand_tab_eara_height">380.0dip</dimen>
+    <dimen name="expand_tab_item_height">45.0dip</dimen>
+    <dimen name="font_bettersmall">12.0sp</dimen>
+    <dimen name="font_huge">22.0sp</dimen>
+    <dimen name="font_large">18.0sp</dimen>
+    <dimen name="font_normal">15.0sp</dimen>
+    <dimen name="font_small">13.0sp</dimen>
+    <dimen name="head_bar_height">45.0dip</dimen>
+    <dimen name="icon_height_smallest">25.0dip</dimen>
+    <dimen name="icon_size_huge">80.0dip</dimen>
+    <dimen name="icon_size_large">72.0dip</dimen>
+    <dimen name="icon_size_middle">45.0dip</dimen>
+    <dimen name="icon_size_normal">64.0dip</dimen>
+    <dimen name="icon_size_small">36.0dip</dimen>
+    <dimen name="icon_size_smallest">20.0dip</dimen>
+    <dimen name="img_height_tall">120.0dip</dimen>
+    <dimen name="item_height_large">90.0dip</dimen>
+    <dimen name="item_height_normal">48.0dip</dimen>
+    <dimen name="item_height_small">40.0dip</dimen>
+    <dimen name="item_height_tall">110.0dip</dimen>
+    <dimen name="item_pic_width_large">100.0dip</dimen>
+    <dimen name="item_width_huge">72.0dip</dimen>
+    <dimen name="item_width_large">64.0dip</dimen>
+    <dimen name="item_width_normal">48.0dip</dimen>
+    <dimen name="item_width_small">32.0dip</dimen>
+    <dimen name="item_width_tiny">16.0dip</dimen>
+    <dimen name="logo_height">30.0dip</dimen>
+    <dimen name="logo_height_large">40.0dip</dimen>
+    <dimen name="logo_width">60.0dip</dimen>
+    <dimen name="logo_width_large">80.0dip</dimen>
+    <dimen name="navigation_height_normal">60.0dip</dimen>
+    <dimen name="navigation_height_small">48.0dip</dimen>
+    <dimen name="page_Side">6.0dip</dimen>
+    <dimen name="page_Side_large">12.0dip</dimen>
+    <dimen name="pop_height">200.0dip</dimen>
+    <dimen name="popup_height">40.0dip</dimen>
+    <dimen name="popup_width">112.0dip</dimen>
+    <dimen name="search_height_normal">56.0dip</dimen>
+    <dimen name="share_icon_width_normal">48.0dip</dimen>
+    <dimen name="shutter_bottom_size">62.0dip</dimen>
+    <dimen name="spacing_huge">24.0dip</dimen>
+    <dimen name="spacing_large">16.0dip</dimen>
+    <dimen name="spacing_normal">12.0dip</dimen>
+    <dimen name="spacing_small">10.0dip</dimen>
+    <dimen name="spacing_tiny">4.0dip</dimen>
+    <dimen name="textsize_10">10.0sp</dimen>
+    <dimen name="textsize_11">11.0sp</dimen>
+    <dimen name="textsize_12">12.0sp</dimen>
+    <dimen name="textsize_14">14.0sp</dimen>
+    <dimen name="textsize_15">15.0sp</dimen>
+    <dimen name="textsize_16">16.0sp</dimen>
+    <dimen name="textsize_17">17.0sp</dimen>
+    <dimen name="textsize_19">19.0sp</dimen>
+    <dimen name="textsize_21">21.0sp</dimen>
+    <dimen name="textsize_22">22.0sp</dimen>
+    <dimen name="textsize_24">24.0sp</dimen>
+    <dimen name="textsize_28">28.0sp</dimen>
+    <dimen name="textsize_50">50.0sp</dimen>
+    <dimen name="thumbnail_imageview_size">41.0dip</dimen>
+    <dimen name="title_height_normal">45.0dip</dimen>
+    <dimen name="title_view_left_back_padding_left">12.0dip</dimen>
+    <dimen name="title_view_left_back_padding_right">12.0dip</dimen>
+    <dimen name="topLeftRadius">0.0dip</dimen>
+    <dimen name="topRightRadius">0.0dip</dimen>
+    <dimen name="top_menu_bar_height">45.0dip</dimen>
+    <dimen name="umeng_fb_item_content_size">14.0sp</dimen>
+    <dimen name="umeng_fb_item_height">48.0dip</dimen>
+    <dimen name="umeng_fb_item_line_height">0.8000001dip</dimen>
+    <dimen name="umeng_fb_item_time_size">12.0sp</dimen>
+    <dimen name="umeng_fb_normal_size">13.0dip</dimen>
+    <dimen name="umeng_fb_record_btn_text_size">20.0sp</dimen>
+    <dimen name="umeng_fb_spinner_padding_left">12.0dip</dimen>
+    <dimen name="video_bottom_bar_height">40.0dip</dimen>
+    <dimen name="videodetails_textsize_time">13.0dip</dimen>
+    <item name="abc" type="id">false</item>
+    <item name="actionbarLayout" type="id">false</item>
+    <item name="ad_image" type="id">false</item>
+    <item name="arrow" type="id">false</item>
+    <item name="atDescTextView" type="id">false</item>
+    <item name="atLayout" type="id">false</item>
+    <item name="atTextView" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="backImageView" type="id">false</item>
+    <item name="base_layout" type="id">false</item>
+    <item name="bmapView" type="id">false</item>
+    <item name="bottom_mask" type="id">false</item>
+    <item name="brand_all_checked" type="id">false</item>
+    <item name="brand_none_checked" type="id">false</item>
+    <item name="bt_album" type="id">false</item>
+    <item name="bt_back" type="id">false</item>
+    <item name="bt_select" type="id">false</item>
+    <item name="bt_take_photo" type="id">false</item>
+    <item name="btn1" type="id">false</item>
+    <item name="btn2" type="id">false</item>
+    <item name="btn3" type="id">false</item>
+    <item name="btnVideoPlayOrPause" type="id">false</item>
+    <item name="btn_back_camera" type="id">false</item>
+    <item name="btn_cancel" type="id">false</item>
+    <item name="btn_casual_look" type="id">false</item>
+    <item name="btn_clear_history" type="id">false</item>
+    <item name="btn_confirm" type="id">false</item>
+    <item name="btn_confirm_order" type="id">false</item>
+    <item name="btn_copy" type="id">false</item>
+    <item name="btn_enter" type="id">false</item>
+    <item name="btn_get_verify" type="id">false</item>
+    <item name="btn_login" type="id">false</item>
+    <item name="btn_logout" type="id">false</item>
+    <item name="btn_lottery" type="id">false</item>
+    <item name="btn_ok" type="id">false</item>
+    <item name="btn_qq" type="id">false</item>
+    <item name="btn_qzone" type="id">false</item>
+    <item name="btn_register" type="id">false</item>
+    <item name="btn_reset_pwd" type="id">false</item>
+    <item name="btn_scan_product" type="id">false</item>
+    <item name="btn_send_msg" type="id">false</item>
+    <item name="btn_shortcut_login" type="id">false</item>
+    <item name="btn_submit" type="id">false</item>
+    <item name="btn_upload" type="id">false</item>
+    <item name="btn_use_picture" type="id">false</item>
+    <item name="btn_wechat" type="id">false</item>
+    <item name="btn_wechat_moments" type="id">false</item>
+    <item name="btn_weibo" type="id">false</item>
+    <item name="btn_weichat" type="id">false</item>
+    <item name="cameraView" type="id">false</item>
+    <item name="capture_containter" type="id">false</item>
+    <item name="capture_crop_layout" type="id">false</item>
+    <item name="capture_preview" type="id">false</item>
+    <item name="capture_scan_line" type="id">false</item>
+    <item name="card_list" type="id">false</item>
+    <item name="cb_brand" type="id">false</item>
+    <item name="cb_brand_all" type="id">false</item>
+    <item name="cb_brand_none" type="id">false</item>
+    <item name="cb_protocol" type="id">false</item>
+    <item name="cb_push_settings" type="id">false</item>
+    <item name="cb_voice_settings" type="id">false</item>
+    <item name="checkbox" type="id">false</item>
+    <item name="checkedImageView" type="id">false</item>
+    <item name="choose_pro_item" type="id">false</item>
+    <item name="civ_head_pic" type="id">false</item>
+    <item name="civ_shop_type" type="id">false</item>
+    <item name="closeImageView" type="id">false</item>
+    <item name="continer" type="id">false</item>
+    <item name="could_sign_layout" type="id">false</item>
+    <item name="coule_sign_store" type="id">false</item>
+    <item name="count_down_time" type="id">false</item>
+    <item name="ct_collect" type="id">false</item>
+    <item name="ct_scan" type="id">false</item>
+    <item name="ct_share" type="id">false</item>
+    <item name="current_in_shop_layout" type="id">false</item>
+    <item name="cursor" type="id">false</item>
+    <item name="data_nothing_layout" type="id">false</item>
+    <item name="day" type="id">false</item>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="deparement_cloth" type="id">false</item>
+    <item name="dialog" type="id">false</item>
+    <item name="dialogMessage" type="id">false</item>
+    <item name="disivion_line" type="id">false</item>
+    <item name="divider" type="id">false</item>
+    <item name="division_line" type="id">false</item>
+    <item name="empty_view" type="id">false</item>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="enpty_tips" type="id">false</item>
+    <item name="et_address" type="id">false</item>
+    <item name="et_addressee" type="id">false</item>
+    <item name="et_code" type="id">false</item>
+    <item name="et_confirm_new_pwd" type="id">false</item>
+    <item name="et_detail_address" type="id">false</item>
+    <item name="et_email" type="id">false</item>
+    <item name="et_feedback" type="id">false</item>
+    <item name="et_invite_code" type="id">false</item>
+    <item name="et_name" type="id">false</item>
+    <item name="et_new_phone" type="id">false</item>
+    <item name="et_new_pwd" type="id">false</item>
+    <item name="et_nick" type="id">false</item>
+    <item name="et_num" type="id">false</item>
+    <item name="et_old_pwd" type="id">false</item>
+    <item name="et_phone" type="id">false</item>
+    <item name="et_pwd" type="id">false</item>
+    <item name="et_qq" type="id">false</item>
+    <item name="et_search" type="id">false</item>
+    <item name="et_verify" type="id">false</item>
+    <item name="expandtab_view" type="id">false</item>
+    <item name="failure_view" type="id">false</item>
+    <item name="fb_listview" type="id">false</item>
+    <item name="fb_reply_item_view_line" type="id">false</item>
+    <item name="fb_reply_item_view_tag" type="id">false</item>
+    <item name="fb_reply_refresh" type="id">false</item>
+    <item name="flash_light" type="id">false</item>
+    <item name="focusImageView" type="id">false</item>
+    <item name="focus_view" type="id">false</item>
+    <item name="footerViewText" type="id">false</item>
+    <item name="framelayout" type="id">false</item>
+    <item name="gallery" type="id">false</item>
+    <item name="gallery_receipt_date" type="id">false</item>
+    <item name="get_beannumber" type="id">false</item>
+    <item name="gift_detail" type="id">false</item>
+    <item name="goods_detail" type="id">false</item>
+    <item name="goods_frame" type="id">false</item>
+    <item name="gridView" type="id">false</item>
+    <item name="grid_view" type="id">false</item>
+    <item name="gridview" type="id">false</item>
+    <item name="hScrollView" type="id">false</item>
+    <item name="history_tag" type="id">false</item>
+    <item name="ib_left" type="id">false</item>
+    <item name="ib_right" type="id">false</item>
+    <item name="id_city" type="id">false</item>
+    <item name="id_district" type="id">false</item>
+    <item name="id_province" type="id">false</item>
+    <item name="image" type="id">false</item>
+    <item name="imageRemoveBtn" type="id">false</item>
+    <item name="imageView" type="id">false</item>
+    <item name="imagesLinearLayout" type="id">false</item>
+    <item name="img1" type="id">false</item>
+    <item name="img2" type="id">false</item>
+    <item name="img3" type="id">false</item>
+    <item name="imgThumbnail" type="id">false</item>
+    <item name="img_activity" type="id">false</item>
+    <item name="img_arrow" type="id">false</item>
+    <item name="img_back" type="id">false</item>
+    <item name="img_beans" type="id">false</item>
+    <item name="img_bottom" type="id">false</item>
+    <item name="img_del" type="id">false</item>
+    <item name="img_empty_icon" type="id">false</item>
+    <item name="img_failure_icon" type="id">false</item>
+    <item name="img_feature" type="id">false</item>
+    <item name="img_flashlight" type="id">false</item>
+    <item name="img_gift_arrow" type="id">false</item>
+    <item name="img_has_signed" type="id">false</item>
+    <item name="img_header_icon" type="id">false</item>
+    <item name="img_house" type="id">false</item>
+    <item name="img_index1" type="id">false</item>
+    <item name="img_index2" type="id">false</item>
+    <item name="img_index3" type="id">false</item>
+    <item name="img_index4" type="id">false</item>
+    <item name="img_left" type="id">false</item>
+    <item name="img_loading" type="id">false</item>
+    <item name="img_logo" type="id">false</item>
+    <item name="img_logopath" type="id">false</item>
+    <item name="img_middle" type="id">false</item>
+    <item name="img_msg" type="id">false</item>
+    <item name="img_msg_state" type="id">false</item>
+    <item name="img_new_gift_tag" type="id">false</item>
+    <item name="img_new_msg" type="id">false</item>
+    <item name="img_new_msg01" type="id">false</item>
+    <item name="img_next" type="id">false</item>
+    <item name="img_next1" type="id">false</item>
+    <item name="img_next2" type="id">false</item>
+    <item name="img_next4" type="id">false</item>
+    <item name="img_no_data" type="id">false</item>
+    <item name="img_receipt" type="id">false</item>
+    <item name="img_receipt_mode" type="id">false</item>
+    <item name="img_right" type="id">false</item>
+    <item name="img_signed" type="id">false</item>
+    <item name="img_splash_light" type="id">false</item>
+    <item name="img_tag_latest_logistics" type="id">false</item>
+    <item name="img_top" type="id">false</item>
+    <item name="img_upload_result" type="id">false</item>
+    <item name="imgbtn_signIn" type="id">false</item>
+    <item name="imgv_msg" type="id">false</item>
+    <item name="imgv_msg1" type="id">false</item>
+    <item name="imgv_new_msg" type="id">false</item>
+    <item name="imgv_screen" type="id">false</item>
+    <item name="inSign_layout" type="id">false</item>
+    <item name="in_shop_txt" type="id">false</item>
+    <item name="include_top" type="id">false</item>
+    <item name="init_loading" type="id">false</item>
+    <item name="input_qrcode" type="id">false</item>
+    <item name="input_qrcode_layout" type="id">false</item>
+    <item name="invite_history_listview" type="id">false</item>
+    <item name="invite_horizontalscrollview" type="id">false</item>
+    <item name="invite_line" type="id">false</item>
+    <item name="isnt_in_img" type="id">false</item>
+    <item name="isnt_inshop" type="id">false</item>
+    <item name="item_fb_content" type="id">false</item>
+    <item name="item_fb_icon" type="id">false</item>
+    <item name="item_fb_time" type="id">false</item>
+    <item name="item_popupwindows_Photo" type="id">false</item>
+    <item name="item_popupwindows_camera" type="id">false</item>
+    <item name="item_popupwindows_cancel" type="id">false</item>
+    <item name="item_text1" type="id">false</item>
+    <item name="iv_back" type="id">false</item>
+    <item name="iv_closs" type="id">false</item>
+    <item name="iv_flash" type="id">false</item>
+    <item name="iv_head_img" type="id">false</item>
+    <item name="iv_into_shop" type="id">false</item>
+    <item name="iv_invite_friend" type="id">false</item>
+    <item name="iv_listview_header_arrow" type="id">false</item>
+    <item name="iv_location" type="id">false</item>
+    <item name="iv_logo" type="id">false</item>
+    <item name="iv_my_take_photo" type="id">false</item>
+    <item name="iv_oss_progress" type="id">false</item>
+    <item name="iv_pic" type="id">false</item>
+    <item name="iv_receipt_back" type="id">false</item>
+    <item name="iv_receipt_back2" type="id">false</item>
+    <item name="iv_receipt_count" type="id">false</item>
+    <item name="iv_receipt_type" type="id">false</item>
+    <item name="iv_right" type="id">false</item>
+    <item name="iv_scan" type="id">false</item>
+    <item name="iv_scan_product" type="id">false</item>
+    <item name="iv_show" type="id">false</item>
+    <item name="iv_show_picture" type="id">false</item>
+    <item name="iv_sign" type="id">false</item>
+    <item name="iv_take_photo" type="id">false</item>
+    <item name="iv_total_money" type="id">false</item>
+    <item name="iv_triangle_Indicator" type="id">false</item>
+    <item name="iv_upload_receipt" type="id">false</item>
+    <item name="iv_welcome_imgv" type="id">false</item>
+    <item name="kb_receipt" type="id">false</item>
+    <item name="keyboard" type="id">false</item>
+    <item name="lastUpdate" type="id">false</item>
+    <item name="launch_product_query" type="id"/>
+    <item name="layout" type="id">false</item>
+    <item name="layout01" type="id">false</item>
+    <item name="layout02" type="id">false</item>
+    <item name="layout1" type="id">false</item>
+    <item name="layout2" type="id">false</item>
+    <item name="layout_1" type="id">false</item>
+    <item name="layout_address" type="id">false</item>
+    <item name="layout_address_select" type="id">false</item>
+    <item name="layout_addressee" type="id">false</item>
+    <item name="layout_arrow" type="id">false</item>
+    <item name="layout_beans" type="id">false</item>
+    <item name="layout_bottom" type="id">false</item>
+    <item name="layout_check_update" type="id">false</item>
+    <item name="layout_clazz" type="id">false</item>
+    <item name="layout_clear_history" type="id">false</item>
+    <item name="layout_client_login" type="id">false</item>
+    <item name="layout_collect_share" type="id">false</item>
+    <item name="layout_contact_us" type="id">false</item>
+    <item name="layout_continer" type="id">false</item>
+    <item name="layout_detail_address" type="id">false</item>
+    <item name="layout_distance" type="id">false</item>
+    <item name="layout_exchange_1" type="id">false</item>
+    <item name="layout_exchange_2" type="id">false</item>
+    <item name="layout_exchange_detail" type="id">false</item>
+    <item name="layout_faile" type="id">false</item>
+    <item name="layout_get_data" type="id">false</item>
+    <item name="layout_head_logined" type="id">false</item>
+    <item name="layout_head_no_login" type="id">false</item>
+    <item name="layout_header" type="id">false</item>
+    <item name="layout_history" type="id">false</item>
+    <item name="layout_index" type="id">false</item>
+    <item name="layout_inshop_title" type="id">false</item>
+    <item name="layout_invite" type="id">false</item>
+    <item name="layout_invite_code" type="id">false</item>
+    <item name="layout_invite_friend" type="id">false</item>
+    <item name="layout_invite_history" type="id">false</item>
+    <item name="layout_left" type="id">false</item>
+    <item name="layout_logcat" type="id">false</item>
+    <item name="layout_login" type="id">false</item>
+    <item name="layout_logistics_detail" type="id">false</item>
+    <item name="layout_logo" type="id">false</item>
+    <item name="layout_mer_collect" type="id">false</item>
+    <item name="layout_mer_share" type="id">false</item>
+    <item name="layout_modify_email" type="id">false</item>
+    <item name="layout_modify_phone" type="id">false</item>
+    <item name="layout_modify_phone_and_pwd" type="id">false</item>
+    <item name="layout_my_beans" type="id">false</item>
+    <item name="layout_new" type="id">false</item>
+    <item name="layout_new_search" type="id">false</item>
+    <item name="layout_no_url" type="id">false</item>
+    <item name="layout_num" type="id">false</item>
+    <item name="layout_parent" type="id">false</item>
+    <item name="layout_person_info" type="id">false</item>
+    <item name="layout_root" type="id">false</item>
+    <item name="layout_scan_product" type="id">false</item>
+    <item name="layout_scanproduct" type="id">false</item>
+    <item name="layout_search" type="id">false</item>
+    <item name="layout_search_history" type="id">false</item>
+    <item name="layout_select_city" type="id">false</item>
+    <item name="layout_set" type="id">false</item>
+    <item name="layout_sign" type="id">false</item>
+    <item name="layout_signin" type="id">false</item>
+    <item name="layout_store" type="id">false</item>
+    <item name="layout_success" type="id">false</item>
+    <item name="layout_third_login" type="id">false</item>
+    <item name="layout_title" type="id">false</item>
+    <item name="layout_top" type="id">false</item>
+    <item name="layout_upload_receipt" type="id">false</item>
+    <item name="layout_user_rank" type="id">false</item>
+    <item name="layout_verify" type="id">false</item>
+    <item name="layout_verify_state" type="id">false</item>
+    <item name="layout_wechat_login" type="id">false</item>
+    <item name="lazyscrollview" type="id">false</item>
+    <item name="left_mask" type="id">false</item>
+    <item name="like" type="id">false</item>
+    <item name="list" type="id">false</item>
+    <item name="listView" type="id">false</item>
+    <item name="listView2" type="id">false</item>
+    <item name="list_item_textview" type="id">false</item>
+    <item name="list_logistics" type="id">false</item>
+    <item name="list_shop" type="id">false</item>
+    <item name="listview" type="id">false</item>
+    <item name="listview_area" type="id">false</item>
+    <item name="listview_city" type="id">false</item>
+    <item name="listview_province" type="id">false</item>
+    <item name="listview_region" type="id">false</item>
+    <item name="listview_town" type="id">false</item>
+    <item name="ll" type="id">false</item>
+    <item name="llVideoDetailPlayerBottom" type="id">false</item>
+    <item name="ll_empty" type="id">false</item>
+    <item name="ll_function_mode" type="id">false</item>
+    <item name="ll_layout1" type="id">false</item>
+    <item name="ll_mob" type="id">false</item>
+    <item name="ll_popup" type="id">false</item>
+    <item name="ll_qq" type="id">false</item>
+    <item name="ll_qzone" type="id">false</item>
+    <item name="ll_receipt01" type="id">false</item>
+    <item name="ll_receipt02" type="id">false</item>
+    <item name="ll_sinaweibo" type="id">false</item>
+    <item name="ll_wechat" type="id">false</item>
+    <item name="ll_wechatmoments" type="id">false</item>
+    <item name="loadFull" type="id">false</item>
+    <item name="load_content" type="id">false</item>
+    <item name="load_nothing_layout" type="id">false</item>
+    <item name="loading" type="id">false</item>
+    <item name="logoImageView" type="id">false</item>
+    <item name="lp_money_procent" type="id">false</item>
+    <item name="lv_gift" type="id">false</item>
+    <item name="lv_msg" type="id">false</item>
+    <item name="lv_my_consumption_coupon" type="id">false</item>
+    <item name="lv_my_exchange" type="id">false</item>
+    <item name="lv_my_receiptlist" type="id">false</item>
+    <item name="lv_receipt_statistic" type="id">false</item>
+    <item name="lv_search_history" type="id">false</item>
+    <item name="lyt_collect" type="id">false</item>
+    <item name="lyt_scan" type="id">false</item>
+    <item name="lyt_share" type="id">false</item>
+    <item name="mListView" type="id">false</item>
+    <item name="mPullRefreshView" type="id">false</item>
+    <item name="mPullToRefreshView" type="id">false</item>
+    <item name="mainRelLayout" type="id">false</item>
+    <item name="map_shop_address" type="id">false</item>
+    <item name="map_shop_name" type="id">false</item>
+    <item name="mer_collect" type="id">false</item>
+    <item name="mer_collect_1" type="id">false</item>
+    <item name="mer_collect_2" type="id">false</item>
+    <item name="mer_scan" type="id">false</item>
+    <item name="mer_scan_1" type="id">false</item>
+    <item name="mer_scan_2" type="id">false</item>
+    <item name="mer_share" type="id">false</item>
+    <item name="mer_share_1" type="id">false</item>
+    <item name="mer_share_2" type="id">false</item>
+    <item name="mer_time" type="id">false</item>
+    <item name="mer_time_1" type="id">false</item>
+    <item name="mer_time_2" type="id">false</item>
+    <item name="message" type="id">false</item>
+    <item name="month" type="id">false</item>
+    <item name="more" type="id">false</item>
+    <item name="msg" type="id">false</item>
+    <item name="msg_detail" type="id">false</item>
+    <item name="nameTextView" type="id">false</item>
+    <item name="newsButtonPro" type="id">false</item>
+    <item name="newsLeftLayout" type="id">false</item>
+    <item name="newsLoadMore" type="id">false</item>
+    <item name="newsScrollview" type="id">false</item>
+    <item name="news_list" type="id">false</item>
+    <item name="news_pic" type="id">false</item>
+    <item name="news_time" type="id">false</item>
+    <item name="news_title" type="id">false</item>
+    <item name="noData" type="id">false</item>
+    <item name="not_in_shop_layout" type="id">false</item>
+    <item name="nothing_layout" type="id">false</item>
+    <item name="okImageView" type="id">false</item>
+    <item name="parent" type="id">false</item>
+    <item name="pb_listview_header" type="id">false</item>
+    <item name="popup_menu_name" type="id">false</item>
+    <item name="preciew" type="id">false</item>
+    <item name="preview_view" type="id">false</item>
+    <item name="pro_display_info_layout" type="id">false</item>
+    <item name="pro_item" type="id">false</item>
+    <item name="pro_merchandise" type="id">false</item>
+    <item name="pro_merchandise_second" type="id">false</item>
+    <item name="pro_store_display" type="id">false</item>
+    <item name="progressBar" type="id">false</item>
+    <item name="progress_frame" type="id">false</item>
+    <item name="progressbar" type="id">false</item>
+    <item name="promoter_frame" type="id">false</item>
+    <item name="promotion_addstore_list" type="id">false</item>
+    <item name="ptr_id_header" type="id">false</item>
+    <item name="ptr_id_image" type="id">false</item>
+    <item name="ptr_id_last_updated" type="id">false</item>
+    <item name="ptr_id_spinner" type="id">false</item>
+    <item name="ptr_id_text" type="id">false</item>
+    <item name="ptr_id_textwrapper" type="id">false</item>
+    <item name="pull_refresh_view" type="id">false</item>
+    <item name="pull_to_load_image" type="id">false</item>
+    <item name="pull_to_load_progress" type="id">false</item>
+    <item name="pull_to_load_text" type="id">false</item>
+    <item name="pull_to_refresh_header" type="id">false</item>
+    <item name="pull_to_refresh_image" type="id">false</item>
+    <item name="pull_to_refresh_progress" type="id">false</item>
+    <item name="pull_to_refresh_text" type="id">false</item>
+    <item name="pull_to_refresh_updated_at" type="id">false</item>
+    <item name="pv_back" type="id">false</item>
+    <item name="pv_input" type="id">false</item>
+    <item name="pv_screening" type="id">false</item>
+    <item name="pv_search" type="id">false</item>
+    <item name="qrcode_submit" type="id">false</item>
+    <item name="quit" type="id"/>
+    <item name="rb_0" type="id">false</item>
+    <item name="rb_1" type="id">false</item>
+    <item name="rb_all" type="id">false</item>
+    <item name="rb_mine" type="id">false</item>
+    <item name="receipt_detail_web" type="id">false</item>
+    <item name="recordInfo" type="id">false</item>
+    <item name="refreshing" type="id">false</item>
+    <item name="restart_preview" type="id"/>
+    <item name="resume_load" type="id">false</item>
+    <item name="return_scan_result" type="id"/>
+    <item name="reward_grid_view" type="id">false</item>
+    <item name="rg_gender" type="id">false</item>
+    <item name="rg_receipt" type="id">false</item>
+    <item name="right_mask" type="id">false</item>
+    <item name="rl_btn" type="id">false</item>
+    <item name="rl_receipt_list" type="id">false</item>
+    <item name="rl_take" type="id">false</item>
+    <item name="root_layout" type="id">false</item>
+    <item name="sbVideoDetailPlayer" type="id">false</item>
+    <item name="scan_layout" type="id">false</item>
+    <item name="scan_line" type="id">false</item>
+    <item name="scan_more" type="id">false</item>
+    <item name="scan_more_layout" type="id">false</item>
+    <item name="screen" type="id">false</item>
+    <item name="screen_brand" type="id">false</item>
+    <item name="screen_brand_layout" type="id">false</item>
+    <item name="screen_lt" type="id">false</item>
+    <item name="scrollview_invite_friend" type="id">false</item>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="search_empty" type="id">false</item>
+    <item name="search_tips" type="id">false</item>
+    <item name="shakeBg" type="id">false</item>
+    <item name="shakeImgDown" type="id">false</item>
+    <item name="shakeImgUp" type="id">false</item>
+    <item name="shake_img" type="id">false</item>
+    <item name="shake_layout" type="id">false</item>
+    <item name="shake_no" type="id">false</item>
+    <item name="shake_ok" type="id">false</item>
+    <item name="share_coll_layout" type="id">false</item>
+    <item name="share_img_bottom" type="id">false</item>
+    <item name="share_img_top" type="id">false</item>
+    <item name="shopLogo" type="id">false</item>
+    <item name="sign_layout" type="id">false</item>
+    <item name="sign_line" type="id">false</item>
+    <item name="sign_line4" type="id">false</item>
+    <item name="sign_tips" type="id">false</item>
+    <item name="status_msg" type="id">false</item>
+    <item name="store" type="id">false</item>
+    <item name="store_address" type="id">false</item>
+    <item name="store_address_index" type="id">false</item>
+    <item name="store_distance" type="id">false</item>
+    <item name="store_distance_index" type="id">false</item>
+    <item name="store_info_layout" type="id">false</item>
+    <item name="store_logo" type="id">false</item>
+    <item name="store_logo_index" type="id">false</item>
+    <item name="store_name" type="id">false</item>
+    <item name="store_name_index" type="id">false</item>
+    <item name="store_product_pic_1" type="id">false</item>
+    <item name="store_product_pic_2" type="id">false</item>
+    <item name="store_signin" type="id">false</item>
+    <item name="storepro_count" type="id">false</item>
+    <item name="sv_camera" type="id">false</item>
+    <item name="sv_head" type="id">false</item>
+    <item name="swipe_container" type="id">false</item>
+    <item name="tButton" type="id">false</item>
+    <item name="tab_Item_layout" type="id">false</item>
+    <item name="tab_bottom" type="id">false</item>
+    <item name="tab_item_img" type="id">false</item>
+    <item name="tab_item_tv" type="id">false</item>
+    <item name="tab_top" type="id">false</item>
+    <item name="tabs" type="id">false</item>
+    <item name="take_photo_layout" type="id">false</item>
+    <item name="tempImageView" type="id">false</item>
+    <item name="text" type="id">false</item>
+    <item name="textCounterTextView" type="id">false</item>
+    <item name="textEditText" type="id">false</item>
+    <item name="thumbnail" type="id">false</item>
+    <item name="time" type="id">false</item>
+    <item name="tip" type="id">false</item>
+    <item name="titleEditText" type="id">false</item>
+    <item name="titleLayout" type="id">false</item>
+    <item name="title_bar" type="id">false</item>
+    <item name="title_layout" type="id">false</item>
+    <item name="toast_img" type="id">false</item>
+    <item name="toast_layout" type="id">false</item>
+    <item name="toast_txt" type="id">false</item>
+    <item name="top_mask" type="id">false</item>
+    <item name="ts_award_list" type="id">false</item>
+    <item name="tv01" type="id">false</item>
+    <item name="tv1" type="id">false</item>
+    <item name="tv2" type="id">false</item>
+    <item name="tv3" type="id">false</item>
+    <item name="tvVideoPlayRemainTime" type="id">false</item>
+    <item name="tvVideoPlayTime" type="id">false</item>
+    <item name="tv_No" type="id">false</item>
+    <item name="tv_about" type="id">false</item>
+    <item name="tv_activity_name" type="id">false</item>
+    <item name="tv_address" type="id">false</item>
+    <item name="tv_agreement" type="id">false</item>
+    <item name="tv_area" type="id">false</item>
+    <item name="tv_beans" type="id">false</item>
+    <item name="tv_beans_num" type="id">false</item>
+    <item name="tv_birth" type="id">false</item>
+    <item name="tv_cache" type="id">false</item>
+    <item name="tv_city" type="id">false</item>
+    <item name="tv_class" type="id">false</item>
+    <item name="tv_clear_cache" type="id">false</item>
+    <item name="tv_copy" type="id">false</item>
+    <item name="tv_cost_bean_num" type="id">false</item>
+    <item name="tv_date" type="id">false</item>
+    <item name="tv_days" type="id">false</item>
+    <item name="tv_description" type="id">false</item>
+    <item name="tv_distance" type="id">false</item>
+    <item name="tv_earn_bean_num" type="id">false</item>
+    <item name="tv_earn_empty" type="id">false</item>
+    <item name="tv_empty" type="id">false</item>
+    <item name="tv_empty_info" type="id">false</item>
+    <item name="tv_explanation" type="id">false</item>
+    <item name="tv_express" type="id">false</item>
+    <item name="tv_express_no" type="id">false</item>
+    <item name="tv_failure_info" type="id">false</item>
+    <item name="tv_feedback" type="id">false</item>
+    <item name="tv_flag" type="id">false</item>
+    <item name="tv_forget_pwd" type="id">false</item>
+    <item name="tv_get_agreement" type="id">false</item>
+    <item name="tv_goods_detail" type="id">false</item>
+    <item name="tv_goods_name" type="id">false</item>
+    <item name="tv_goods_price" type="id">false</item>
+    <item name="tv_head_content" type="id">false</item>
+    <item name="tv_ibeacon_shop_name" type="id">false</item>
+    <item name="tv_info" type="id">false</item>
+    <item name="tv_into_shop" type="id">false</item>
+    <item name="tv_invite" type="id">false</item>
+    <item name="tv_invite_beans" type="id">false</item>
+    <item name="tv_invite_decribe" type="id">false</item>
+    <item name="tv_invite_friend" type="id">false</item>
+    <item name="tv_invite_person" type="id">false</item>
+    <item name="tv_item" type="id">false</item>
+    <item name="tv_join" type="id">false</item>
+    <item name="tv_join_count" type="id">false</item>
+    <item name="tv_key" type="id">false</item>
+    <item name="tv_lastmonth" type="id">false</item>
+    <item name="tv_left" type="id">false</item>
+    <item name="tv_listview_header_last_update_time" type="id">false</item>
+    <item name="tv_listview_header_state" type="id">false</item>
+    <item name="tv_location" type="id">false</item>
+    <item name="tv_logistics_info" type="id">false</item>
+    <item name="tv_logistics_time" type="id">false</item>
+    <item name="tv_modify_phone" type="id">false</item>
+    <item name="tv_modify_pwd" type="id">false</item>
+    <item name="tv_month" type="id">false</item>
+    <item name="tv_month_coast" type="id">false</item>
+    <item name="tv_month_content" type="id">false</item>
+    <item name="tv_month_times" type="id">false</item>
+    <item name="tv_month_total_cost" type="id">false</item>
+    <item name="tv_month_total_count" type="id">false</item>
+    <item name="tv_more_gifts" type="id">false</item>
+    <item name="tv_my_collect" type="id">false</item>
+    <item name="tv_my_consumption_coupon" type="id">false</item>
+    <item name="tv_my_exchange" type="id">false</item>
+    <item name="tv_my_invite_code" type="id">false</item>
+    <item name="tv_my_receipte" type="id">false</item>
+    <item name="tv_mybeacon" type="id">false</item>
+    <item name="tv_name" type="id">false</item>
+    <item name="tv_new_location" type="id">false</item>
+    <item name="tv_nextmonth" type="id">false</item>
+    <item name="tv_nickName" type="id">false</item>
+    <item name="tv_noMore" type="id">false</item>
+    <item name="tv_noMore_txt" type="id">false</item>
+    <item name="tv_no_data" type="id">false</item>
+    <item name="tv_no_date" type="id">false</item>
+    <item name="tv_no_logistics" type="id">false</item>
+    <item name="tv_num" type="id">false</item>
+    <item name="tv_number" type="id">false</item>
+    <item name="tv_order_cancel_reason" type="id">false</item>
+    <item name="tv_other_shop" type="id">false</item>
+    <item name="tv_phone" type="id">false</item>
+    <item name="tv_popularity" type="id">false</item>
+    <item name="tv_province" type="id">false</item>
+    <item name="tv_ranking" type="id">false</item>
+    <item name="tv_receipt_date" type="id">false</item>
+    <item name="tv_receipt_money" type="id">false</item>
+    <item name="tv_receipt_type" type="id">false</item>
+    <item name="tv_receiver" type="id">false</item>
+    <item name="tv_remainBeans" type="id">false</item>
+    <item name="tv_remain_num" type="id">false</item>
+    <item name="tv_reward" type="id">false</item>
+    <item name="tv_right" type="id">false</item>
+    <item name="tv_scan" type="id">false</item>
+    <item name="tv_scan_decribe" type="id">false</item>
+    <item name="tv_scan_product" type="id">false</item>
+    <item name="tv_search" type="id">false</item>
+    <item name="tv_set" type="id">false</item>
+    <item name="tv_shop_address" type="id">false</item>
+    <item name="tv_shop_name" type="id">false</item>
+    <item name="tv_shop_type" type="id">false</item>
+    <item name="tv_sign" type="id">false</item>
+    <item name="tv_signIn" type="id">false</item>
+    <item name="tv_sign_days" type="id">false</item>
+    <item name="tv_sign_decribe" type="id">false</item>
+    <item name="tv_status" type="id">false</item>
+    <item name="tv_string" type="id">false</item>
+    <item name="tv_third_phone" type="id">false</item>
+    <item name="tv_tip1" type="id">false</item>
+    <item name="tv_tip2" type="id">false</item>
+    <item name="tv_title" type="id">false</item>
+    <item name="tv_total" type="id">false</item>
+    <item name="tv_totalBeans" type="id">false</item>
+    <item name="tv_total_money" type="id">false</item>
+    <item name="tv_total_name" type="id">false</item>
+    <item name="tv_total_num" type="id">false</item>
+    <item name="tv_town" type="id">false</item>
+    <item name="tv_type_money" type="id">false</item>
+    <item name="tv_upload_receipt" type="id">false</item>
+    <item name="tv_upload_receipt1" type="id">false</item>
+    <item name="tv_upload_result" type="id">false</item>
+    <item name="tv_usually_address" type="id">false</item>
+    <item name="tv_usually_question" type="id">false</item>
+    <item name="tv_verify_state" type="id">false</item>
+    <item name="tv_version" type="id">false</item>
+    <item name="tv_wechat" type="id">false</item>
+    <item name="txt" type="id">false</item>
+    <item name="txt_signIn" type="id">false</item>
+    <item name="umeng_common_icon_view" type="id">false</item>
+    <item name="umeng_common_notification" type="id">false</item>
+    <item name="umeng_common_notification_controller" type="id">false</item>
+    <item name="umeng_common_progress_bar" type="id">false</item>
+    <item name="umeng_common_progress_text" type="id">false</item>
+    <item name="umeng_common_rich_notification_cancel" type="id">false</item>
+    <item name="umeng_common_rich_notification_continue" type="id">false</item>
+    <item name="umeng_common_title" type="id">false</item>
+    <item name="umeng_fb_action_collapse" type="id">false</item>
+    <item name="umeng_fb_audio_dialog_count_down_tag_tv" type="id">false</item>
+    <item name="umeng_fb_audio_dialog_count_down_tv" type="id">false</item>
+    <item name="umeng_fb_audio_dialog_count_tv" type="id">false</item>
+    <item name="umeng_fb_audio_dialog_layout" type="id">false</item>
+    <item name="umeng_fb_contact_spinner" type="id">false</item>
+    <item name="umeng_fb_contact_title" type="id">false</item>
+    <item name="umeng_fb_container" type="id">false</item>
+    <item name="umeng_fb_help_pager" type="id">false</item>
+    <item name="umeng_fb_help_tabs" type="id">false</item>
+    <item name="umeng_fb_image_detail_imageview" type="id">false</item>
+    <item name="umeng_fb_input_layout" type="id">false</item>
+    <item name="umeng_fb_keyboard_tag_btn" type="id">false</item>
+    <item name="umeng_fb_plus_btn" type="id">false</item>
+    <item name="umeng_fb_question" type="id">false</item>
+    <item name="umeng_fb_record_btn" type="id">false</item>
+    <item name="umeng_fb_record_tag_btn" type="id">false</item>
+    <item name="umeng_fb_reply_audio_duration" type="id">false</item>
+    <item name="umeng_fb_reply_audio_layout" type="id">false</item>
+    <item name="umeng_fb_reply_audio_play_anim" type="id">false</item>
+    <item name="umeng_fb_reply_content" type="id">false</item>
+    <item name="umeng_fb_reply_content_layout" type="id">false</item>
+    <item name="umeng_fb_reply_date" type="id">false</item>
+    <item name="umeng_fb_reply_image" type="id">false</item>
+    <item name="umeng_fb_reply_item_view_line" type="id">false</item>
+    <item name="umeng_fb_reply_item_view_tag" type="id">false</item>
+    <item name="umeng_fb_reply_list" type="id">false</item>
+    <item name="umeng_fb_resend" type="id">false</item>
+    <item name="umeng_fb_send_btn" type="id">false</item>
+    <item name="umeng_fb_send_content" type="id">false</item>
+    <item name="umeng_fb_send_layout" type="id">false</item>
+    <item name="umeng_fb_spinnerTarget" type="id">false</item>
+    <item name="umeng_fb_swipe_container" type="id">false</item>
+    <item name="umeng_fb_welcome_info" type="id">false</item>
+    <item name="umeng_update_content" type="id">false</item>
+    <item name="umeng_update_frame" type="id">false</item>
+    <item name="umeng_update_id_cancel" type="id">false</item>
+    <item name="umeng_update_id_check" type="id">false</item>
+    <item name="umeng_update_id_close" type="id">false</item>
+    <item name="umeng_update_id_ignore" type="id">false</item>
+    <item name="umeng_update_id_ok" type="id">false</item>
+    <item name="umeng_update_wifi_indicator" type="id">false</item>
+    <item name="v_above" type="id">false</item>
+    <item name="v_botton" type="id">false</item>
+    <item name="v_botton_line" type="id">false</item>
+    <item name="v_screen_line" type="id">false</item>
+    <item name="v_tab_line" type="id">false</item>
+    <item name="videoPlayerView" type="id">false</item>
+    <item name="videoicon" type="id">false</item>
+    <item name="view1" type="id">false</item>
+    <item name="view_line" type="id">false</item>
+    <item name="view_line1" type="id">false</item>
+    <item name="view_logitics_map" type="id">false</item>
+    <item name="view_order_cancel" type="id">false</item>
+    <item name="view_up_bg" type="id">false</item>
+    <item name="viewfinder_view" type="id">false</item>
+    <item name="viewflow" type="id">false</item>
+    <item name="viewflowindic" type="id">false</item>
+    <item name="viewpager" type="id">false</item>
+    <item name="waterMark" type="id">false</item>
+    <item name="waterfull_layout" type="id">false</item>
+    <item name="waterfull_style_layout" type="id">false</item>
+    <item name="web" type="id">false</item>
+    <item name="webview" type="id">false</item>
+    <item name="xlistview_footer_content" type="id">false</item>
+    <item name="xlistview_footer_hint_textview" type="id">false</item>
+    <item name="xlistview_footer_progressbar" type="id">false</item>
+    <item name="xlistview_header_arrow" type="id">false</item>
+    <item name="xlistview_header_content" type="id">false</item>
+    <item name="xlistview_header_hint_textview" type="id">false</item>
+    <item name="xlistview_header_progressbar" type="id">false</item>
+    <item name="xlistview_header_text" type="id">false</item>
+    <item name="xlistview_header_time" type="id">false</item>
+    <item name="year" type="id">false</item>
+    <item name="zoomSeekBar" type="id">false</item>
+    <integer name="grid_column_count">2</integer>
+    <string name="BAIDUMAP_APPKEY">kzQxGQarvZmNyAZd5Rfo0MS5</string>
+    <string name="Files">Files</string>
+    <string name="Image">Image</string>
+    <string name="JPUSH_APPKEY">ea1782966c93c173d4420f78</string>
+    <string name="PACKAGENAME">com.ismartgo.apppub</string>
+    <string name="PGYER_APPKEY">605b86252e8b914f0cdc701c2d4fcceb</string>
+    <string name="PGYER_LINK">http://w.url.cn/s/ANh3qKe</string>
+    <string name="Thumbnail">Thumbnail</string>
+    <string name="UMAppUpdate">App updating</string>
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMENG_APPKEY">56036e7b67e58e882f005b72</string>
+    <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+    <string name="UMIgnore">Ingore this</string>
+    <string name="UMNewVersion">Latest version:</string>
+    <string name="UMNotNow">Not now</string>
+    <string name="UMTargetSize">Target size:</string>
+    <string name="UMToast_IsUpdating">Updating....</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="UMUpdateContent">Update Content</string>
+    <string name="UMUpdateNow">Update now</string>
+    <string name="UMUpdateSize">Update size:</string>
+    <string name="UMUpdateTitle">New version found</string>
+    <string name="Video">Video</string>
+    <string name="WECHAT_APPKEY">wxe0f98dd2b0c053b9</string>
+    <string name="WECHAT_APPSECRET">64ee1c7be042361c40545f14c52d4105</string>
+    <string name="activity_date">日期： %s</string>
+    <string name="activity_distance">距离： %s</string>
+    <string name="activity_popularity">人气： %s</string>
+    <string name="activity_reward">奖励： %s</string>
+    <string name="album_enter_select">选择</string>
+    <string name="album_message">图片&amp;视频</string>
+    <string name="album_phoot_select_all">全选</string>
+    <string name="album_phoot_unselect_all">取消全选</string>
+    <string name="album_photo_select_tip">项</string>
+    <string name="album_title">我的相册</string>
+    <string name="already_sign">已签到</string>
+    <string name="api_cancel">取消</string>
+    <string name="app_discrible">精明购，惠生活!</string>
+    <string name="app_name">精明购</string>
+    <string name="back">返回</string>
+    <string name="baidutieba">百度贴吧</string>
+    <string name="baidutieba_client_inavailable">目前您的百度贴吧版本过低或未安装，需要安装百度贴吧才能使用</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="cancel">取消</string>
+    <string name="common_cut">移动</string>
+    <string name="common_delete">删除</string>
+    <string name="common_edit">编辑</string>
+    <string name="content_null">亲，没有找到相关的促销信息哦~再试试其他吧</string>
+    <string name="continue_sign">连续签到</string>
+    <string name="douban">豆瓣</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="email">邮件</string>
+    <string name="evernote">印象笔记</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebookmessenger">Facebook Messenger</string>
+    <string name="feedback_hint">亲，您在使用过程中遇到的任何问题或者对我们的商品有任何建议都可以反馈给我们呦！</string>
+    <string name="finish">完成</string>
+    <string name="flickr">Flickr</string>
+    <string name="foursquare">FourSquare</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="googleplus">Google+</string>
+    <string name="has_product_order">您已下单成功，我们将很快处理的啦！</string>
+    <string name="has_ship">您的礼品已发货，做好收货的准备吧！</string>
+    <string name="instagram">Instagram</string>
+    <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="instapager_email_or_password_incorrect">Email或密码不正确</string>
+    <string formatted="false" name="instapager_login_html">&lt;!DOCTYPE html> &lt;html> &lt;head> &lt;meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\"> &lt;meta content=\"width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no\" id=\"viewport\" name=\"viewport\"> &lt;meta content=\"yes\" name=\"apple-mobile-web-app-capable\"> &lt;title>%s&lt;/title> &lt;style type=\"text/css\"> body{margin:0;padding:0} .inputstyle { -webkit-tap-highlight-color:rgba(255,255,255,0); width:100%%; height:44px; color:#000; background:0; border:0; font-size:16px; outline: none; -webkit-appearance:none } .btn { width:90%%; height:44px; line-height:44px; background:#A0C035; border:0; border-radius:4px; color:#fff; font-size:16px; text-align:center; margin-top:15px; display:block } .btn:disabled { background: #dddddd; } .error { color:red; } &lt;/style> &lt;/head> &lt;body> &lt;script type=\"text/javascript\"> function login(form){ var u=form[\"u\"].value,p=form[\"p\"].value; if(!u || !p) return false; form[\"s\"].disabled = true; return true; } &lt;/script> &lt;form style=\"margin-top:45px;\" action=\"%s\" metho=\"get\" onsubmit=\"return login(this);\"> %s &lt;div style=\"padding-left:15px;border-top:1px solid #E3E3E5;border-bottom:1px solid #E3E3E5;\"> &lt;input type=\"hidden\" name=\"ID_SIGN\" value=\"OWELJSFPWECSFEW\"/> &lt;input class=\"inputstyle\" id=\"u\" name=\"u\" type=\"text\" value=\"%s\" placeholder=\"%s\" style=\"border-bottom:1px solid #E3E3E5;\"/> &lt;input class=\"inputstyle\" id=\"p\" name=\"p\" type=\"password\" placeholder=\"%s\"/> &lt;/div> &lt;p>&lt;input style=\"margin:0 auto;\" type=\"submit\" name=\"s\" value=\" %s \" class=\"btn\"/>&lt;/p> &lt;/form> &lt;/body> &lt;/html></string>
+    <string name="instapaper">Instapaper</string>
+    <string name="instapaper_email">邮箱</string>
+    <string name="instapaper_login">登录</string>
+    <string name="instapaper_logining">登录中…</string>
+    <string name="instapaper_pwd">密码</string>
+    <string name="into_sign">到店签到</string>
+    <string name="invite_beans">已获得 %s豆 的邀请奖励</string>
+    <string name="kaixin">开心网</string>
+    <string name="kakaostory">KakaoStory</string>
+    <string name="kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
+    <string name="kakaotalk">KakaoTalk</string>
+    <string name="kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
+    <string name="laiwang">来往</string>
+    <string name="laiwang_client_inavailable">目前您的来往版本过低或未安装，需要安装来往才能使用</string>
+    <string name="laiwangmoments">来往动态</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="line">Line</string>
+    <string name="line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
+    <string name="linkedin">领英</string>
+    <string name="list_friends">%s的朋友</string>
+    <string name="load_full">已加载全部</string>
+    <string name="loading">加载中…</string>
+    <string name="loadmore">加载更多…</string>
+    <string name="login_tips">亲，您还未登录，请先登录吧！</string>
+    <string name="menu_settings">Settings</string>
+    <string name="mingdao">明道</string>
+    <string name="mingdao_share_content">网页分享</string>
+    <string name="more">加载中</string>
+    <string name="msg_default_status">将商品条码放入框内，即可自动扫描</string>
+    <string name="msg_list">消息列表</string>
+    <string name="multi_share">微博分享</string>
+    <string name="near_by">附近</string>
+    <string name="near_cute">附近(智能)</string>
+    <string name="neteasemicroblog">网易微博</string>
+    <string name="newVersion">最新</string>
+    <string name="no_data">― 没有更多了 ―</string>
+    <string name="no_data_listview">― 没有更多了 ―</string>
+    <string name="no_exist_nickname">您还没有设置昵称哦～</string>
+    <string name="pgcommon_share">分享</string>
+    <string name="pinterest">Pinterest</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="pocket">Pocket</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中…</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新…</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_self">下拉刷新</string>
+    <string name="qq">QQ</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="qzone">QQ空间</string>
+    <string name="refresh">刷新</string>
+    <string name="refreshing">刷新中…</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="release_to_refresh_self">松开刷新</string>
+    <string name="remainder_num">剩余： %s</string>
+    <string name="renren">人人网</string>
+    <string name="scan_good">― 在指定的商店内，扫描以下商品条码，赚取精明豆 ―</string>
+    <string name="scan_tips">将商品条码放入框内，即可自动扫描</string>
+    <string name="second_title">微博分享</string>
+    <string name="select_a_friend">请选择一个朋友</string>
+    <string name="select_one_plat_at_least">请选择一个目标平台</string>
+    <string name="set_mobile">为了账号安全请绑定手机号码</string>
+    <string name="shake2share">摇晃手机！</string>
+    <string name="share">分享</string>
+    <string name="share_canceled">分享已取消</string>
+    <string name="share_completed">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_to">分享到</string>
+    <string name="share_to_baidutieba">分享到百度贴吧</string>
+    <string name="share_to_mingdao">分享到明道</string>
+    <string name="share_to_qq">分享到QQ</string>
+    <string name="share_to_qzone">分享到QQ空间</string>
+    <string name="share_to_qzone_default">来自%s的分享</string>
+    <string name="sharing"/>
+    <string name="shortmessage">信息</string>
+    <string name="sign_success">签到成功</string>
+    <string name="sign_tips">您不在扫描范围内哦~</string>
+    <string name="sinaweibo">新浪微博</string>
+    <string name="sohumicroblog">搜狐微博</string>
+    <string name="sohusuishenkan">搜狐随身看</string>
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <string name="temp_date">2012-3-19 13:45</string>
+    <string name="tencentweibo">腾讯微博</string>
+    <string name="tip_invite">每邀请3个好友加入精明购， 即可赚取相应精明豆。</string>
+    <string name="tip_scan">找到有“扫描商品”图标的商品， 到店后找到指定商品， 扫描商品条码。</string>
+    <string name="tip_sign_in">找到有“到店签到”图标的商店， 点击签到图标， 即可完成签到。</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="total_num">总量： %s</string>
+    <string name="tumblr">Tumblr</string>
+    <string name="twitter">Twitter</string>
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_download_failed">Download Failed!</string>
+    <string name="umeng_common_download_finish">Download finished,click to install it.</string>
+    <string name="umeng_common_download_notification_prefix">Downloading:</string>
+    <string name="umeng_common_icon">icon</string>
+    <string name="umeng_common_info_interrupt">dowload interrupted.</string>
+    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+    <string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
+    <string name="umeng_common_pause_notification_prefix">Pause:</string>
+    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+    <string name="umeng_common_start_download_notification">Download start.</string>
+    <string name="umeng_common_start_patch_notification">Patch start.</string>
+    <string name="umeng_fb_back">Back</string>
+    <string name="umeng_fb_change_contact_title">Change contact Info</string>
+    <string name="umeng_fb_contact_email">Email</string>
+    <string name="umeng_fb_contact_info">Contact Info</string>
+    <string name="umeng_fb_contact_info_hint">Email, MSN, Gtalk, or whatever we can find you.</string>
+    <string name="umeng_fb_contact_key_email">email</string>
+    <string name="umeng_fb_contact_key_other">plain</string>
+    <string name="umeng_fb_contact_key_phone">phone</string>
+    <string name="umeng_fb_contact_key_qq">qq</string>
+    <string name="umeng_fb_contact_other">Other</string>
+    <string name="umeng_fb_contact_phone">Phone</string>
+    <string name="umeng_fb_contact_qq">QQ</string>
+    <string name="umeng_fb_contact_save">Save</string>
+    <string name="umeng_fb_count_down">Count down</string>
+    <string name="umeng_fb_feedback">Feedback</string>
+    <string name="umeng_fb_no_record_permission">No permission of record</string>
+    <string name="umeng_fb_notification_content_formatter_multiple_msg">You received %d new replies from the app developer.</string>
+    <string name="umeng_fb_notification_content_formatter_single_msg">New reply: %s</string>
+    <string name="umeng_fb_notification_ticker_text">Got new reply</string>
+    <string name="umeng_fb_please_select_picture">Please select a picture</string>
+    <string name="umeng_fb_press_speech">Hold to Talk</string>
+    <string name="umeng_fb_questions_anwser">A:</string>
+    <string name="umeng_fb_questions_question">Q:</string>
+    <string name="umeng_fb_record_fail">Record fail</string>
+    <string name="umeng_fb_record_time_short">Message too short</string>
+    <string name="umeng_fb_release_cancel">Release to cancel</string>
+    <string name="umeng_fb_release_send">Release to Send</string>
+    <string name="umeng_fb_reply_content_default">Your precious feedback are appriciated.</string>
+    <string name="umeng_fb_send">Send</string>
+    <string name="umeng_fb_send_fail">Send fail</string>
+    <string name="umeng_fb_sending">Sending…</string>
+    <string name="umeng_fb_slide_up_cancel">Slide up to cancel</string>
+    <string name="umeng_fb_time_minutes_ago">%d minutes ago</string>
+    <string name="umeng_fb_time_pre_year_format">yy/MM/dd HH:mm:ss</string>
+    <string name="umeng_fb_time_right_now">Just now</string>
+    <string name="umeng_fb_time_this_year_format">MM/dd HH:mm:ss</string>
+    <string name="umeng_fb_title">Feedback</string>
+    <string name="umeng_fb_write_contact_title">Write contact Info</string>
+    <string name="upload_receipt">上传购物小票，参加热门促销活动赚更多精明豆。</string>
+    <string name="use_login_button">请改用“登录”按钮</string>
+    <string name="user_protocol">《用户服务协议》</string>
+    <string name="vkontakte">VK</string>
+    <string name="wait_ship">您的礼品已在静静地等待发货中</string>
+    <string name="web_fail">亲，网络好像出问题了~</string>
+    <string name="website">http://www.mob.com</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="wechatfavorite">微信收藏</string>
+    <string name="wechatmoments">微信朋友圈</string>
+    <string name="weibo_oauth_regiseter">应用授权</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
+    <string name="xlistview_footer_hint_normal">― 没有更多了 ―</string>
+    <string name="yixin">易信</string>
+    <string name="yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
+    <string name="yixinmoments">易信朋友圈</string>
+    <string name="youdao">有道云笔记</string>
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/date_select_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light"/>
+    <style name="AppTheme" parent="@style/AppBaseTheme"/>
+    <style name="CheckBoxStyle">
+        <item name="android:layout_width">28.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="DialogDefalut" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ShareDialogAnim</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="DialogStyleBottom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="KeyBoardTheme">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:textColor">@color/keyword_textcolor_selector</item>
+        <item name="android:background">@color/trans</item>
+    </style>
+    <style name="KeyboardDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/ShareDialogAnim</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="MyProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@drawable/progress_bg</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="PopupAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_enter</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_exit</item>
+    </style>
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+    <style name="ShareDialogAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/sharedialog_in</item>
+        <item name="android:windowExitAnimation">@anim/sharedialog_out</item>
+    </style>
+    <style name="ShowPicDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ShowPicDialogAnim</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="ShowPicDialogAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_show_pic_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_show_pic_exist</item>
+    </style>
+    <style name="TextView"/>
+    <style name="TextView.Middle" parent="@style/TextView">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="TextView.Middle.Black" parent="@style/TextView.Middle">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="TextView.Middle.White" parent="@style/TextView.Middle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextView.Small" parent="@style/TextView">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="TextView.Small.Black" parent="@style/TextView.Small">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="TextView.Small.White" parent="@style/TextView.Small">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Theme" parent="@android:style/Theme"/>
+    <style name="Theme.Tabhost" parent="@style/Theme">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="button_icon_graytext">
+        <item name="android:textColor">@color/color_999999</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">@dimen/dimen_10</item>
+    </style>
+    <style name="button_white_large">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_btn_logout</item>
+        <item name="android:padding">@dimen/spacing_small</item>
+    </style>
+    <style name="customProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">21.0dip</item>
+        <item name="android:layout_height">21.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/dialog_progress</item>
+    </style>
+    <style name="edittext_pwd">
+        <item name="android:maxLength">20</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <style name="item_mine_click">
+        <item name="android:textSize">@dimen/textsize_14</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawableRight">@drawable/arrow_right_black</item>
+        <item name="android:drawablePadding">@dimen/dimen_15</item>
+    </style>
+    <style name="ptr_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25.0dip</item>
+        <item name="android:src">@drawable/ic_launcher</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ptr_header">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ptr_headerContainer">
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0px</item>
+    </style>
+    <style name="ptr_last_updated" parent="@style/ptr_text">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_below">@id/ptr_id_text</item>
+    </style>
+    <style name="ptr_spinner" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25.0dip</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ptr_text">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ptr_textwrapper">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="textview_gray_large">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/gray_2</item>
+    </style>
+    <style name="textview_gray_normal">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/gray_2</item>
+    </style>
+    <style name="umeng_fb_image_dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/umeng_fb_dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/umeng_fb_dialog_exit_anim</item>
+    </style>
+    <style name="umeng_fb_speech_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="video_detail_player">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="video_detail_player_bottom_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+</resources>

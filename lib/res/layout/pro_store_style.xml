@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/line_1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:id="@id/layout_store" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/store_logo" android:layout_width="@dimen/dimen_logo_width" android:layout_height="@dimen/dimen_logo_height" android:layout_marginLeft="@dimen/dimen_10" android:scaleType="centerInside" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_15">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/store_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="汇景新城" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4">
+                    <TextView android:textSize="@dimen/textsize_11" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/store_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="广州天河城地负一层屈臣氏" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_9" android:src="@drawable/map" />
+                    <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_999999" android:gravity="right" android:id="@id/store_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_2" android:text="1.5公里" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/store_signin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_2" android:src="@drawable/sign_in" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/line_1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_30" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10">
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_999999" android:gravity="left|center" android:id="@id/storepro_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="共有236个优惠" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/color_007aff" android:gravity="right|center" android:id="@id/scan_more" android:paddingLeft="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="更多" android:drawableRight="@drawable/arrow_right_black" android:drawablePadding="@dimen/dimen_2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/promo_horizontail_style" />
+    </LinearLayout>
+</LinearLayout>

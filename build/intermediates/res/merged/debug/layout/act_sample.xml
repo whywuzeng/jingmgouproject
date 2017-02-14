@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huewu.pla.lib.MultiColumnListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" pla:plaColumnNumber="2" pla:plaLandscapeColumnNumber="3" xmlns:pla="http://schemas.android.com/apk/res-auto" />
+</merge>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_163">
+        <RelativeLayout android:background="@drawable/bg_mine" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_120">
+            <ImageView android:id="@id/iv_receipt_back" android:paddingLeft="@dimen/dimen_20" android:paddingTop="@dimen/dimen_17" android:paddingRight="@dimen/dimen_17" android:paddingBottom="@dimen/dimen_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/icon_back_1" />
+            <TextView android:textSize="@dimen/textsize_17" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_13" android:text="我的小票" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_receipt_count" android:padding="@dimen/dimen_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/icon_statistics_1" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_12" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/textsize_11" android:textColor="#ffffffff" android:id="@id/tv_month_total_cost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="月购物花费" />
+                <TextView android:textSize="@dimen/textsize_15" android:textColor="#ffffffff" android:id="@id/tv_month_coast" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0.00" android:singleLine="true" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/textsize_15" android:textColor="#ffffffff" android:id="@id/tv_month_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_12" android:text="0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/textsize_11" android:textColor="#ffffffff" android:id="@id/tv_month_total_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_20" android:text="月购物次数" android:layout_above="@id/tv_month_times" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_my_take_photo" android:layout_width="@dimen/dimen_90" android:layout_height="@dimen/dimen_80" android:src="@drawable/icon_photograph_1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_receipt_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lv_my_receiptlist" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/white" android:divider="@null" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_receipt01" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_49">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_receipt02" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                <View android:background="@color/color_dddddd" android:layout_width="@dimen/dimen_1" android:layout_height="@dimen/dimen_20" />
+                <ImageView android:layout_width="@dimen/dimen_8" android:layout_height="@dimen/dimen_8" android:src="@drawable/icon_date_1" />
+                <View android:background="@color/color_dddddd" android:visibility="invisible" android:layout_width="@dimen/dimen_1" android:layout_height="@dimen/dimen_20" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_dddddd" android:id="@id/tv_no_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10" android:text="0日" android:layout_toLeftOf="@id/ll_receipt02" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_13" android:textColor="@color/color_dddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:text="0.00" android:layout_toRightOf="@id/ll_receipt02" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="@dimen/dimen_70" android:layout_height="@dimen/dimen_68" android:layout_marginTop="50.0dip" android:src="@drawable/bg_empty" />
+        <TextView android:textSize="@dimen/textsize_17" android:textColor="@color/color_dddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20" android:text="您还没有拍过小票~" />
+        <TextView android:textSize="@dimen/textsize_17" android:textColor="@color/color_dddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="点击上面拍摄按钮拍一张" />
+    </LinearLayout>
+</LinearLayout>

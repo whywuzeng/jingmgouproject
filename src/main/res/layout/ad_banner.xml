@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_ads_banner_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/framelayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ismartgo.app.ownself.view.ViewFlow android:id="@id/viewflow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:gravity="center" android:layout_gravity="bottom" android:background="@color/transparent" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ismartgo.app.ownself.view.CircleFlowIndicator android:id="@id/viewflowindic" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:activeColor="@color/orange" app:inactiveColor="@color/white" app:radius="4.0dip" app:inactiveType="fill" app:activeType="fill" app:circleSeparation="20.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

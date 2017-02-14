@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/failure_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_failure_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_failure" />
+    <TextView android:id="@id/tv_failure_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="访问错误信息" />
+</LinearLayout>

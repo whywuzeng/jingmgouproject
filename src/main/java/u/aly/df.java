@@ -1,0 +1,14 @@
+package u.aly;
+
+public final class df
+{
+  public static final byte a = 1;
+  public static final byte b = 2;
+  public static final byte c = 3;
+  public static final byte d = 4;
+}
+
+/* Location:           F:\一周备份\面试apk\希望代码没混淆\jingmgou\jingmgou2\classes-dex2jar.jar
+ * Qualified Name:     u.aly.df
+ * JD-Core Version:    0.6.2
+ */

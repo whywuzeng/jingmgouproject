@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/textsize_15" android:textColor="@color/white" android:id="@id/tv_month_content" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0月0日"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

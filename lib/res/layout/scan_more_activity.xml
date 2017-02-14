@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pv="http://schemas.android.com/apk/res/com.ismartgo.apppub">
+    <include layout="@layout/search_head" />
+    <com.ismartgo.app.ownself.view.ExpandTabView android:id="@id/expandtab_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="hello" />
+    <LinearLayout android:orientation="vertical" android:id="@id/scan_more_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.maxwin.view.XListView android:id="@id/list_shop" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" />
+        <TextView android:textColor="@color/gray_black" android:gravity="center" android:id="@id/tv_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="无数据" android:layout_weight="1.0" />
+    </LinearLayout>
+    <me.maxwin.view.XListViewRefresh android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/search_empty" android:background="@color/gray_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cry" />
+        <TextView android:textSize="@dimen/font_normal" android:textColor="@color/gray" android:gravity="center" android:id="@id/search_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" />
+        <Button android:textSize="@dimen/font_large" android:textColor="@color/orange" android:gravity="center" android:id="@id/resume_load" android:background="@drawable/btn_border_corner" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:text="重新加载" />
+    </LinearLayout>
+</LinearLayout>

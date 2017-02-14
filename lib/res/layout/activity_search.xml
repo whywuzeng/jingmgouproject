@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_layout" android:background="@color/color_f2572d" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_44">
+        <ImageView android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back" android:onClick="back" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_search" android:background="@drawable/bai_1" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <EditText android:textSize="@dimen/font_small" android:textColor="@color/white" android:textColorHint="@color/color_99ffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_search" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_12" android:hint="搜索商店或商品" android:singleLine="true" android:drawableLeft="@drawable/ic_search" android:drawablePadding="@dimen/dimen_12" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+            <ImageView android:layout_gravity="center_vertical" android:padding="@dimen/spacing_small" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search" android:onClick="search" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_search" android:layout_width="@dimen/dimen_50" android:layout_height="fill_parent" android:text="搜索" />
+    </LinearLayout>
+    <FrameLayout android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_search_history" android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/history_tag" android:paddingLeft="@dimen/dimen_10" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_30">
+                <TextView android:textSize="@dimen/textsize_12" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索记录" />
+                <View android:background="@drawable/line_1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <ListView android:id="@id/lv_search_history" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/color_e7e7e7" android:dividerHeight="@dimen/dimen_line" />
+            <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_line" />
+            <LinearLayout android:gravity="center" android:id="@id/layout_clear_history" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45" android:onClick="clearHistorySearch">
+                <TextView android:textSize="@dimen/textsize_17" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/btn_clear_history" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="清除搜索记录" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

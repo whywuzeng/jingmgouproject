@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_e7e7e7" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_your_beans" />
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_reward_exchange" />
+            </LinearLayout>
+            <View android:background="@color/color_e7e7e7" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_10" />
+            <include layout="@layout/layout_earn_beans" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_35" android:layout_margin="@dimen/dimen_10">
+            <Button android:textSize="@dimen/textsize_14" android:textColor="@color/white" android:id="@id/btn1" android:background="@drawable/bg_left_click" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="全部" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:id="@id/btn2" android:background="@drawable/bg_middle_normal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="赚" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/textsize_14" android:textColor="@color/color_f2572d" android:id="@id/btn3" android:background="@drawable/bg_right_normal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="花" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.ismartgo.pulltorefreshlistview.view.RefreshListView android:id="@id/listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/trans" android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>
